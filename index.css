@@ -15,4 +15,11 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 2rem auto;
+
 }
+
+.email-list{
+    display: flex;
+}
+
+
