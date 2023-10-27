@@ -17,10 +17,11 @@ body {
     font-family: 'Bebas Neue';
 }
 
-h1{
+h1 {
     text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
 }
-
 .logo {
     width: 600px;
     height: 500px;
@@ -29,6 +30,9 @@ h1{
 img {
     width: 100%;
     height: 100%;
+}
+.mailing-list {
+    padding:2rem;
 }
 
 .email-list{
@@ -41,23 +45,20 @@ input[type="email"] {
     width: 100%;
     height: 2.4rem;
     border-radius: 30px;
-    background: transparent;
     bordeR: none;
     padding: 8px;
-    color: #fdfbf9;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 button {
-    width: 4rem;
+    width: 4.2rem;
     height: 2.4rem;
-    border-radius: 30px;
     border: none;
-    color: #fdfbf9;
-    background: transparent;
+    background: #323232;
     position: absolute;
     right: 0;
-    cursor:pointer;
+    cursor: pointer;
+    color: #fdfbf9;
+    font-size: 1rem;
 }
-
 
