@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Bebas+Neue&family=Teko:wght@500&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,18 +9,55 @@ body {
     width: 100%;
     height: 100%;
     background-color: #323232;
-    overflow-y: scroll;
-    overflow-x: hidden;
     color: #fdfbf9;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem auto;
+    align-items: center;
+    font-family: 'Bebas Neue';
+}
 
+h1{
+    text-align: center;
+}
+
+.logo {
+    width: 600px;
+    height: 500px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 .email-list{
     display: flex;
+    position: relative;
+}
+
+input[type="email"] {
+    outline: none;
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 30px;
+    background: transparent;
+    bordeR: none;
+    padding: 8px;
+    color: #fdfbf9;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    width: 4rem;
+    height: 2.4rem;
+    border-radius: 30px;
+    border: none;
+    color: #fdfbf9;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    cursor:pointer;
 }
 
 
