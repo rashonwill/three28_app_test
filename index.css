@@ -49,6 +49,7 @@ input[type="email"] {
     bordeR: none;
     padding: 8px;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Bebas Neue';
 }
 
 button {
@@ -61,5 +62,6 @@ button {
     cursor: pointer;
     color: #fdfbf9;
     font-size: 1rem;
+    font-family: 'Bebas Neue';
 }
 
