@@ -4,9 +4,9 @@ import Bg from './bg';
 
 
 export const metadata = {
-  title: 'Fari | Account',
-  description: 'Fari user access.',
-  keywords: ['fari login', 'fari registration', 'fari app', 'FARI', 'fari platform', 'fari videos', 'fari video sharing app', 'fari platform']
+  title: 'Three28 | Account',
+  description: 'Three28 user access.',
+  keywords: ['Three28 login', 'Three28 registration', 'Three28 app', 'Three28', 'Three28 platform', 'Three28 videos', 'Three28 video sharing app', 'Three28 platform']
 }
 
 
@@ -19,9 +19,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className='relative w-full h-full max-lg:hidden'>
           <Bg />
           <div className='absolute inset-0 p-20 -translate-y-1/2 top-1/2'>
-            <div className=' bg-[#B9BAB9]/30 drop-shadow-md p-10 text-[#050529] rounded-3xl w-full'>
+            <div className=' bg-[#B9BAB9]/30 drop-shadow-md p-10 text-[#323232] rounded-3xl w-full'>
               <Typography variant='h1'>
-                create. <br /> profit. <br /> repeat.
+                create. <br /> & <br /> profit.
               </Typography>
             </div>
           </div>

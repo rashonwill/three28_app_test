@@ -5,9 +5,9 @@ import Navbar from '@/components/molecules/navbar';
 import HeaderPhoto from './header-photo';
 
 export const metadata = {
-  title: 'Fari | Channel',
-  description: 'Fari user profile',
-  keywords: ['fari app', 'FARI', 'fari platform', 'fari videos', 'fari video sharing app', 'fari platform', 'fari channel']
+  title: 'Three28 | Channel',
+  description: 'Three28 user profile',
+  keywords: ['Three28 app', 'Three28', 'Three28 platform', 'Three28 videos', 'Three28 video sharing app', 'Three28 platform', 'Three28 channel']
 }
 
 

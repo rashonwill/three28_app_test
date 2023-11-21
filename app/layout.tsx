@@ -17,29 +17,24 @@ const teko = Teko({
 });
 
 
-// export const metadata: Metadata = {
-//   title: '...',
-//   description: '...',
-// }
-
 
 export const metadata = {
-  title: 'Fari: Create & Profit',
-  applicationName: 'Fari',
+  title: 'Three28: Create & Profit',
+  applicationName: 'Three28',
   generator: 'Next.js',
   category: 'social media',
-  description: `Fari: Your ultimate video sharing platform with content monetization, and an exclusive eCommerce store for content creators. Join us today!`,
-  keywords: ['video sharing', 'youtube', 'video monetization', 'social media', 'video sharing platform', 'content monetization', 'fari', 'Fari social media site', 'Fari video platform', 
-            'Fari', 'video uploading', 'sites like YouTube', 'sell video content', 'OnlyFans like site', 'fari app', 'Fari: Share Videos Online', 
-            'Ecommerce Store for Content Creators on Fari', 'Fari: Monetize Your Video Content', 'Fari: 100% Profit for Creators', 'Boondocks', 'boondocks full episodes', 'AI Videos', 'FARI AI Content', 'FARI Short films',
-           'fari pay per view', 'pay per view videos', 'fari pay to view content'],
+  description: `Three28: Your ultimate video sharing platform with content monetization, and an exclusive eCommerce store for content creators. Join us today!`,
+  keywords: ['video sharing', 'youtube', 'video monetization', 'social media', 'video sharing platform', 'content monetization', 'Three28', 'three28 social media site', 'Three28 video platform', 
+            'Three28', 'video uploading', 'sites like YouTube', 'sell video content', 'OnlyFans like site', 'Three28 app', 'Three28: Share Videos Online', 
+            'Ecommerce Store for Content Creators on Three28', 'Three28: Monetize Your Video Content', 'Three28: 100% Profit for Creators', 'Boondocks', 'boondocks full episodes', 'AI Videos', 'Three28 AI Content', 'Three28 Short films',
+           'Three28 pay per view', 'pay per view videos', 'Three28 pay to view content'],
  viewport: {
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
   },
     alternates: {
-    canonical: 'https://letsfari.com/',
+    canonical: 'https://three28.app/',
   },
 }
 
@@ -93,9 +88,9 @@ src="https://www.facebook.com/tr?id=737404921084988&ev=PageView
 </noscript>
     
       <body className={`${teko.className} ${teko.variable} `}>
-        <h1 className="text-[transparent] z-0 absolute">Fari</h1>
-        <h2 className="text-[transparent] z-0 absolute">Fari: Video Sharing Platform</h2>
-        <h2 className="text-[transparent] z-0 absolute">Fari App</h2>
+        <h1 className="text-[transparent] z-0 absolute">Three28</h1>
+        <h2 className="text-[transparent] z-0 absolute">Three28: Video Sharing Platform</h2>
+        <h2 className="text-[transparent] z-0 absolute">Three28 App</h2>
         <h2 className="text-[transparent] z-0 absolute">Content monetization</h2>
         <h2 className="text-[transparent] z-0 absolute">Monetize content</h2>
         <h3 className="text-[transparent] z-0 absolute">Video sharing platform</h3>
