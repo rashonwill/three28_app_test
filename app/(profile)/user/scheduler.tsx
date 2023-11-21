@@ -306,7 +306,7 @@ const cancelSession = () => {
           <ScheduleModal meetings={meetings} setMeetings={setMeetings}>
                     <Button
 		     accent
-                     className="mt-8 w-full h-[2.5rem] text-[1.3rem] rounded-md px-3 py-2 text-sm font-semibold text-white shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                     className="mt-8 w-full h-[2.5rem] text-[1.3rem] rounded-md px-3 py-2 text-sm font-semibold shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Add event
           </Button>
