@@ -405,7 +405,7 @@ async function getMyFavs(){
         ) : (
    <Link  href={`/play?video=${uuid}`} aria-label="Play video" >
             <Play
-              className='cursor-pointer fill-secondary stroke-secondary '
+              className='cursor-pointer fill-[#CFAC66] stroke-[#CFAC66] '
               size={64}
             />
           </Link>
@@ -414,14 +414,6 @@ async function getMyFavs(){
           <Typography variant={spotlight ? 'h3' : 'h5'}>{title}</Typography>
         )}
       </div>
-{/*       <video
-        src={src}
-        poster={poster}
-        className='w-full transition-all duration-1000 aspect-video brightness-50 peer-hover:brightness-100 rounded-3xl object-fill'
-        width={400}
-        height={300}   
-      >
-      </video> */}
 
 	<Image
         src={poster}
@@ -470,10 +462,10 @@ async function getMyFavs(){
            <>
 
 	    <div className="flex">
-		<Check color="#bb9747" />
+		<Check color="#CFAC66" />
 		<Typography
                 variant='h6'
-                className="text-[#bb9847]"
+                className="text-[#CFAC66]"
                 >
                Added to watchlist
                 </Typography>
