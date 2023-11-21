@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import { useState } from "react";
-import Button from '@/components/atoms/button';
+// import Button from '@/components/atoms/button';
 import Input from '@/components/atoms/input';
 import Typography from '@/components/atoms/typography';
 import { Mail, User2 } from 'lucide-react';
@@ -53,9 +53,9 @@ export default function Reset(){
       <form className='flex flex-col mt-10 gap-y-9'>
       <Input type="email" placeholder="email" icon={Mail} required onChange={updateEmail} />
         <div id="message" className="text-rose-800 text-2xl text-center">{message}</div>
-        <Button className='w-full' onClick={passwordResetRequest}>Submit</Button>
+        <Button className='w-full bg-[#686868]' onClick={passwordResetRequest}>Submit</Button>
       <div className="w-full text-center">
-        <Link className='hover:text-secondary ' href={'/login'}>
+        <Link className=' text-[#323232] hover:text-secondary ' href={'/login'}>
         <Typography variant='h4'>
          Back to login
         </Typography>
