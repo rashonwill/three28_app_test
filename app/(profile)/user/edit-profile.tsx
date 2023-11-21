@@ -331,9 +331,9 @@ if(!dp || dp === ''){
 
               <div className='flex justify-end gap-4 px-4 py-8'>
                 <Dialog.Close asChild>
-                  <Button accent className='text-primary-foreground h-[3rem] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize dark:text-[#fdfbf9]'>Cancel</Button>
+                  <Button accent className='h-[3rem] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize dark:text-[#fdfbf9]'>Cancel</Button>
                 </Dialog.Close>
-                  <Button accent className='text-primary-foreground h-[3rem] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize dark:text-[#fdfbf9]' onClick={() => {editBio(); editHandle(); editLocation(); updatePoster(); updateAvatar();}} >Save</Button>
+                  <Button accent className='h-[3rem] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize dark:text-[#fdfbf9]' onClick={() => {editBio(); editHandle(); editLocation(); updatePoster(); updateAvatar();}} >Save</Button>
               </div>
             </ScrollArea.Viewport>
             <ScrollArea.Scrollbar orientation='vertical' />
