@@ -213,7 +213,7 @@ const register = async () => {
           />
           <label htmlFor='checkbox'>I agree to the <Link className=' text-[#323232] hover:text-secondary ' href={'/termsandconditions'}>terms and conditions</Link></label>
         </Typography>
-        <Button className='w-full bg-[#686868]' onClick={registrationRequest}>Register</Button>
+        <Button accent className='w-full bg-[#686868]' onClick={registrationRequest}>Register</Button>
       </form>
       <div className='flex flex-col items-center gap-5 py-10'>
         <Typography variant='h4' className='text-[#323232]'>
