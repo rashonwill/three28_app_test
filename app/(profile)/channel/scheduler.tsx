@@ -15,7 +15,7 @@ export default function Scheduler() {
     <>
       <div className="flex flex-col justify-center items-center m-[1rem] mt-[5rem]">
         <ScheduleModal>
-        <Button>Request a meeting</Button>
+        <Button accent>Request a meeting</Button>
         </ScheduleModal>
         
       </div>
