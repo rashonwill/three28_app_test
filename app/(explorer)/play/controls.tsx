@@ -585,7 +585,7 @@ function Icon({
   return (
     <Icon
       className={
-        clicked ? ' fill-[#BB9847] stroke-[#545454] transition-all   ' : ''
+        clicked ? ' fill-[#686868] stroke-[#545454] transition-all   ' : ''
       }
     />
   );
