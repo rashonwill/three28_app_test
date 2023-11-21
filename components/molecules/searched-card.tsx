@@ -236,10 +236,10 @@ const handlePayment = () => {
 		  {listed ? (
 	         <>
 	<div className="flex">
-		<Check color="#bb9747" />
+		<Check color="#969697" />
 		<Typography
                 variant='h6'
-                className="text-[#bb9847]"
+                className="text-[#969697]"
                 >
                Added to watchlist
                 </Typography>
