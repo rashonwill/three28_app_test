@@ -9,11 +9,6 @@ import Link from 'next/link';
 import _ from "underscore";
 import Head from 'next/head'
 
-// import { Metadata } from 'next';
- 
-// export const metadata: Metadata = {
-//   title: 'Fari | Login',
-// }
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -110,7 +105,7 @@ export default function Login() {
       <Head>
         <title>Fari | Login</title>
       </Head>
-      <Typography variant='h2' className='max-lg:text-center max-lg:mt-44'>
+      <Typography variant='h2' className='max-lg:text-center text-[#323232] max-lg:mt-44'>
         Hello, welcome back!{' '}
       </Typography>
       <form className='flex flex-col gap-y-14 mt-36'>

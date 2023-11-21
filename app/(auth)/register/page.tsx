@@ -179,7 +179,7 @@ const register = async () => {
       <Head>
         <title>Fari | Registration</title>
       </Head>
-      <Typography variant='h2' className='max-lg:text-center max-lg:mt-44'>
+      <Typography variant='h2' className='max-lg:text-center text-[#323232] max-lg:mt-44'>
         Create an account.
       </Typography>
       <form className='flex flex-col mt-10 gap-y-9'>

@@ -60,7 +60,7 @@ export default function Page() {
           {tabs.map((_: string, idx: number) => (
             <>
               <Tabs.Trigger
-                className='w-full px-6 text-left aria-selected:bg-gradient-to-r from-primary-light to-primary-dark aria-selected:text-background rounded-2xl py-0.5'
+                className='w-full px-6 text-left aria-selected:bg-[#969697] aria-selected:text-white rounded-2xl py-0.5'
                 value={_}
                 key={_}
               >
