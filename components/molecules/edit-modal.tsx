@@ -157,9 +157,9 @@ useEffect(() => {
                  </div>
                 <div className='flex justify-center gap-5 pt-20'>
 		 <Dialog.Close>
-                    <Button sm aria-label="close edit modal">Close</Button>
+                    <Button accent sm aria-label="close edit modal">Close</Button>
                   </Dialog.Close>
-                  <Button sm onClick={editVideo} aria-label="save video edit changes">Save</Button>
+                  <Button accent sm onClick={editVideo} aria-label="save video edit changes">Save</Button>
                 </div>
               </div>
             </ScrollArea.Viewport>
