@@ -45,7 +45,7 @@ export const Reports = ({
         </RadioGroup.Root>
         <Button
 	  accent	
-	  className="bg-gradient-to-r from-primary-light to-primary-dark text-primary-foreground h-[60px] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize"	
+	  className="h-[60px] text-3xl px-12 rounded-2xl shadow-lg hover:shadow-xl transition-all capitalize"	
           onClick={() => { setOpen(false); flagVideo(reason);}}
         >
           Report
