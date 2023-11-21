@@ -25,7 +25,7 @@ export default function Brand({
       <Image
         src={'/assets/images/logo.svg'}
         alt='logo'
-        className={cn('lg:w-64', { 'lg:w-auto h-24': explorer })}
+        className={cn('lg:w-64', { 'lg:w-auto h-8': explorer })}
         width={400}
         height={200}
       />
