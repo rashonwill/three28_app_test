@@ -191,7 +191,7 @@ const register = async () => {
         <Input type="text" placeholder="affiliate code" icon={QrCode} onChange={updateCode}  onFocus={hidePasswordRules} id="code"/>
         <div id="messages" >
         <Typography variant='h5' className="text-rose-800 text-2xl text-center">{message}</Typography>
-          <ul className="text-2xl text-left" id="criteria">
+          <ul className="text-2xl text-left text-[#323232]" id="criteria">
               <li id="character-length">At least 8 characters</li>
               <li id="uppercase-letter">At least one uppercase character</li>
               <li id="lowercase-letter">At least one lowrcase character</li>
@@ -211,14 +211,14 @@ const register = async () => {
             value="accepted"
             name="termsofuse"
           />
-          <label htmlFor='checkbox'>I agree to the <Link className='hover:text-secondary ' href={'/termsandconditions'}>terms and conditions</Link></label>
+          <label htmlFor='checkbox'>I agree to the <Link className=' text-[#323232] hover:text-secondary ' href={'/termsandconditions'}>terms and conditions</Link></label>
         </Typography>
-        <Button className='w-full' onClick={registrationRequest}>Register</Button>
+        <Button className='w-full bg-[#686868]' onClick={registrationRequest}>Register</Button>
       </form>
       <div className='flex flex-col items-center gap-5 py-10'>
-        <Typography variant='h4'>
+        <Typography variant='h4' className='text-[#323232]'>
           Already have an account?{' '}
-          <Link className='hover:text-secondary ' href={'/login'}>
+          <Link className='text-[#323232] hover:text-secondary ' href={'/login'}>
             Login Here.
           </Link>
         </Typography>
