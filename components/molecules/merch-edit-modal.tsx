@@ -285,9 +285,9 @@ useEffect(() => {
              </div>   
   
   <div className='flex justify-center gap-5 pt-20'>
-    <Button sm aria-label="update merch" onClick={updateProduct}>Update</Button>
+    <Button accent sm aria-label="update merch" onClick={updateProduct}>Update</Button>
      <Dialog.Close>
-      <Button sm aria-label="close modal">Close</Button>
+      <Button accent sm aria-label="close modal">Close</Button>
      </Dialog.Close>
   </div>
 
