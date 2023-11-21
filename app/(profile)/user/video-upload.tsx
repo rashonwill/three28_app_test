@@ -183,9 +183,9 @@ const channelPost = useCallback(async () => {
              </div>
              
              <div className="flex justify-end gap-4 py-8 m-[1rem] mb-[3rem]">
-             <Button sm className="dark:text-[#fdfbf9]" onClick={upload}>Upload</Button>
+             <Button accent sm className="dark:text-[#fdfbf9]" onClick={upload}>Upload</Button>
              <Dialog.Close asChild>
-               <Button sm className="dark:text-[#fdfbf9]">Close</Button>
+               <Button accent sm className="dark:text-[#fdfbf9]">Close</Button>
              </Dialog.Close>
              </div>
     
