@@ -113,11 +113,11 @@ try {
                 </div>
 
               <div className='flex flex-wrap justify-end gap-10 px-4 mt-24'>
-                  <Button className="dark:text-[#fdfbf9]" onClick={bookMeeting}>
+                  <Button accent className="dark:text-[#fdfbf9]" onClick={bookMeeting}>
                     Book It
                   </Button>
                 <Dialog.Close asChild>
-                  <Button className="dark:text-[#fdfbf9]">
+                  <Button accent className="dark:text-[#fdfbf9]">
                    Close
                   </Button>
                 </Dialog.Close>
