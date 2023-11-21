@@ -114,13 +114,13 @@ export default function Login() {
 
         
         <div id="message" className="text-rose-800 text-2xl text-center">{message}</div>
-        <Button className='w-full' onClick={loginRequest}>Login</Button>
+        <Button className='w-full bg-[#686868]' onClick={loginRequest}>Login</Button>
       </form>
       <div className='flex flex-col items-center gap-5 py-10'>
-        <Typography variant='h4'><Link className='hover:text-secondary ' href={'/reset'}>Forgot your password?</Link> </Typography>
-        <Typography variant='h4'>
+        <Typography variant='h4'><Link className='text-[#323232] hover:text-secondary ' href={'/reset'}>Forgot your password?</Link> </Typography>
+        <Typography variant='h4' className='text-[#323232]'>
           Don’t have an account?{' '}
-          <Link className='hover:text-secondary ' href={'/register'}>
+          <Link className='text-[#323232] hover:text-secondary ' href={'/register'}>
             Register Here
           </Link>
           .
