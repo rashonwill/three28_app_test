@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import { useState } from "react";
-// import Button from '@/components/atoms/button';
+import Button from '@/components/atoms/button';
 import Input from '@/components/atoms/input';
 import Typography from '@/components/atoms/typography';
 import { Mail, User2 } from 'lucide-react';
