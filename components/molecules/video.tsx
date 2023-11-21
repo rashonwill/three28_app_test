@@ -392,7 +392,7 @@ async function getMyFavs(){
         )}
       >
          {payable ? (
-          <div className='px-12 mb-2 rounded-full cursor-pointer bg-[#090088]' onClick={handlePayment}>
+          <div className='px-12 mb-2 rounded-full cursor-pointer bg-[#969697]' onClick={handlePayment}>
             <Typography
               variant='h5'
               className='text-while (condition) {
