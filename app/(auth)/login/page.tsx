@@ -114,7 +114,7 @@ export default function Login() {
 
         
         <div id="message" className="text-rose-800 text-2xl text-center">{message}</div>
-        <Button accent className='w-full bg-[#686868]' onClick={loginRequest}>Login</Button>
+        <Button accent className='w-full h-16 bg-[#686868]' onClick={loginRequest}>Login</Button>
       </form>
       <div className='flex flex-col items-center gap-5 py-10'>
         <Typography variant='h4'><Link className='text-[#323232] hover:text-secondary ' href={'/reset'}>Forgot your password?</Link> </Typography>
