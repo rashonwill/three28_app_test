@@ -405,7 +405,7 @@ async function getMyFavs(){
         ) : (
    <Link  href={`/play?video=${uuid}`} aria-label="Play video" >
             <Play
-              className='cursor-pointer fill-[#CFAC66] stroke-[#CFAC66] '
+              className='cursor-pointer fill-[#969697] stroke-[#969697] '
               size={64}
             />
           </Link>
@@ -462,10 +462,10 @@ async function getMyFavs(){
            <>
 
 	    <div className="flex">
-		<Check color="#CFAC66" />
+		<Check color="#969697" />
 		<Typography
                 variant='h6'
-                className="text-[#CFAC66]"
+                className="text-[#969697]"
                 >
                Added to watchlist
                 </Typography>
