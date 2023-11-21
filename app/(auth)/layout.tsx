@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className='absolute inset-0 p-20 -translate-y-1/2 top-1/2'>
             <div className=' bg-[#B9BAB9]/30 drop-shadow-md p-10 text-[#323232] rounded-3xl w-full'>
               <Typography variant='h1'>
-                create. <br /> & <br /> profit.
+                create <br /> & <br /> profit
               </Typography>
             </div>
           </div>
