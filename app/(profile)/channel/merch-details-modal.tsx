@@ -279,7 +279,7 @@ useEffect(() => {
 	    
       <div className="checkout flex flex-col justify-center items-center mt-8">
         <Typography variant="h3" id="subtotal">Subtotal: ${subtotal}</Typography>
-        <Button className="h-[40px] text-[30px] dark:text-[#fdfbf9]" onClick={() => {setCartQty(); setCartItem();}}> {status} </Button>
+        <Button accent className="h-[40px] text-[30px] dark:text-[#fdfbf9]" onClick={() => {setCartQty(); setCartItem();}}> {status} </Button>
       </div>
 	    
     </div>
@@ -289,7 +289,7 @@ useEffect(() => {
    </div>
   <div className='flex justify-center gap-5'>
      <Dialog.Close>
-      <Button sm aria-label="close modal">Close</Button>
+      <Button accent sm aria-label="close modal">Close</Button>
      </Dialog.Close>
   </div>
 
