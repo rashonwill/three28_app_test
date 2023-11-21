@@ -119,11 +119,11 @@ export default function MessageModal({
                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{message}</span>}
              </div>
               <div className='flex flex-wrap justify-end gap-10 px-4 mt-24'>
-                  <Button className="dark:text-[#fdfbf9]" onClick={newMessage}>
+                  <Button accent className="dark:text-[#fdfbf9]" onClick={newMessage}>
                     Send
                   </Button>
                 <Dialog.Close asChild>
-                  <Button className="dark:text-[#fdfbf9]">
+                  <Button accent className="dark:text-[#fdfbf9]">
                    Close
                   </Button>
                 </Dialog.Close>
