@@ -486,9 +486,9 @@ const upload = async () => {
            
 
 	      <div className='flex justify-center gap-5 pt-20 mb-40'>
-		  <Button sm aria-label="upload product" className="dark:text-[#fdfbf9]" onClick={upload}>Upload</Button>    
+		  <Button accent sm aria-label="upload product" className="dark:text-[#fdfbf9]" onClick={upload}>Upload</Button>    
                 <Dialog.Close>
-                  <Button sm aria-label="close modal" className="dark:text-[#fdfbf9]">Close</Button>
+                  <Button accent sm aria-label="close modal" className="dark:text-[#fdfbf9]">Close</Button>
                 </Dialog.Close>
 	          			  
               </div>    
