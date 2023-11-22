@@ -223,7 +223,7 @@ const handlePayment = () => {
       </div>
       <Popover.Root>
         {payable ? (
-          <Button className='absolute origin-top-right scale-75 dark:text-white lg:scale-90 right-4 top-4' onClick={handlePayment} aria-label="purchase video">
+          <Button accent className='absolute origin-top-right scale-75 dark:lg:scale-90 right-4 top-4' onClick={handlePayment} aria-label="purchase video">
             ${price}
           </Button>
         ) : (
