@@ -392,7 +392,7 @@ async function getMyFavs(){
         )}
       >
          {payable ? (
-          <div className='px-12 mb-2 rounded-full cursor-pointer bg-[#969697]' onClick={handlePayment}>
+          <div className='px-12 mb-2 rounded-full cursor-pointer bg-[#0000ff]' onClick={handlePayment}>
             <Typography
               variant='h5'
               className='text-while (condition) {
@@ -405,7 +405,7 @@ async function getMyFavs(){
         ) : (
    <Link  href={`/play?video=${uuid}`} aria-label="Play video" >
             <Play
-              className='cursor-pointer fill-[#969697] stroke-[#969697] '
+              className='cursor-pointer fill-[#0000ff] stroke-[#0000ff] '
               size={64}
             />
           </Link>
