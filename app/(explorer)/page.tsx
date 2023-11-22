@@ -71,7 +71,7 @@ export default function Page() {
               )}
             </>
           ))}
-          <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="redirect to community"><a href="/">Community</a></button>
+          <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="redirect to community"><a href="/community">Community</a></button>
           <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="email support"><a href="mailto:support@letsfari.com">Support</a></button>
           <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' onClick={logOut} aria-label="logout">Logout</button>
         </Tabs.List>
