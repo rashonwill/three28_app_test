@@ -566,8 +566,8 @@ useEffect(() => {
   ];
 
   const data2 = [
-    { value: likes, icon: ThumbsUp, action: likeStatus },
-    { value: dislikes, icon: ThumbsDown, action: () =>  dislikeStatus() },
+    { value: likes, icon: ThumbsUp, action: likeStatus, id: 'liked' },
+    { value: dislikes, icon: ThumbsDown, id: 'disliked', action: () =>  dislikeStatus() },
   ];
 
   return (
