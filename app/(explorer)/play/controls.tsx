@@ -21,6 +21,7 @@ function Action(props: {
     icon: LucideIcon;
     onclick?: () => void;
     action?: Function;
+    id: string;	   
 };
 }) {
   const [clicked, setClicked] = useState(false);
@@ -38,10 +39,10 @@ function handleClick() {
 
 function statusCheck(){
  let liked = localStorage.getItem('likeID')
- let disliked = localStorage.getItem('dislikeID')
+ let disliked = localStorage.getItem('disLikeID')
 
 if (liked){
-  setClicked((p) => !p);	
+  setClicked((p) => !p);
 }
 if (disliked){
   setClicked((p) => !p);	
@@ -557,11 +558,11 @@ useEffect(() => {
 
 	
   const data = [
-    { value: likes, icon: ThumbsUp, action: likeStatus },
-    { value: dislikes, icon: ThumbsDown, action: () =>  dislikeStatus() },
-    { icon: Heart, action: () => favVideo() },
-    { icon: Clock, action: () => laterVideo() },
-    { icon: Flag, onclick: () => setOpen(true) },
+    { value: likes, icon: ThumbsUp, action: likeStatus, id: 'liked' },
+    { value: dislikes, icon: ThumbsDown, id: 'disliked', action: () =>  dislikeStatus() },
+    { icon: Heart, id: 'faved', action: () => favVideo() },
+    { icon: Clock, id: 'watchlater',  action: () => laterVideo() },
+    { icon: Flag, id: 'flagged', onclick: () => setOpen(true) },
   ];
 
   const data2 = [
