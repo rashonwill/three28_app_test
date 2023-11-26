@@ -36,6 +36,22 @@ function handleClick() {
     }
   }
 
+function statusCheck(){
+ let liked = localStorage.getItem('likeID')
+ let disliked = localStorage.getItem('dislikeID')
+
+if (liked){
+  setClicked((p) => !p);	
+}
+if (disliked){
+  setClicked((p) => !p);	
+}	
+}	
+
+useEffect(() => {
+     statusCheck();
+  }, []);
+
   return (
     <div
       onClick={handleClick}
@@ -425,7 +441,6 @@ async function checkUserLikes() {
     const data = await response.json();
     if (data.iLike.length > 0) {
       localStorage.setItem("likeID", data.iLike[0].likeid);
-	    setClicked(true)
     }
     return data.iLike;
   } catch (error) {
@@ -476,7 +491,6 @@ async function checkUserDisLikes() {
     const data = await response.json();
     if (data.idisLike.length > 0) {
     localStorage.setItem("disLikeID", data.idisLike[0].dislikeid);
-	    setClicked(true)
     }
     return data.idisLike;
   } catch (error) {
