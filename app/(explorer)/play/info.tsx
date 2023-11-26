@@ -39,7 +39,9 @@ const playVideo = async () => {
 };
 
 useEffect(() => {
-	localStorage.removeItem('comments');
+   localStorage.removeItem('comments');
+   localStorage.removeItem('dislikeID');
+   localStorage.removeItem('likeID');
     playVideo();
   }, []);
   
