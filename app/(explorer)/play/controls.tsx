@@ -49,9 +49,9 @@ if (disliked){
 }	
 }	
 
-useEffect(() => {
-     statusCheck();
-  }, []);
+// useEffect(() => {
+//      statusCheck();
+//   }, []);
 
   return (
     <div
