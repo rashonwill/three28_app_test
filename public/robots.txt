@@ -11,4 +11,4 @@ Disallow: /channel
 Noindex: /termsandconditions
 Noindex: /order-complete
 
-Sitemap: https://letsfari.com/sitemap.xml
+Sitemap: https://three28.app/sitemap.xml
