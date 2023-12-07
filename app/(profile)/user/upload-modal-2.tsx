@@ -171,7 +171,7 @@ export default function UploadModal2({
 
       </RadioGroup.Root>
       <Typography variant='h5' className='text-[#B04141] my-10'>
-        For rentals : Please ensure that you have completed vendor registration
+        For Paid: to access this feature, please ensure that you have completed vendor registration
         under the Account settings.
       </Typography>
     </section>
