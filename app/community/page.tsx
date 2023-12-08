@@ -51,7 +51,7 @@ export default function Community() {
         <title>Three28| Community</title>
     </Head> 
        <section className='lg:container max-lg:mb-20'>
-      <Tabs.Root defaultValue='Browse' className='flex max-lg:hidden'>
+      <Tabs.Root defaultValue='Home' className='flex max-lg:hidden'>
         <Tabs.List className='flex flex-col items-start gap-6 px-6 w-[215px]'>
           {tabs.map((_: string, idx: number) => (
             <>
@@ -69,12 +69,12 @@ export default function Community() {
           ))}
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
-          <Typography variant='h2' className='max-lg:text-center text-[#323232] max-lg:mt-44 mt-4rem'>
+          <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
         Welcome to the Coummunity! We're under construction!!
       </Typography>
         </Tabs.Content>
         <Tabs.Content value='Feed' className='w-full'>
-          <Typography variant='h2' className='max-lg:text-center text-[#323232] max-lg:mt-44 mt-4rem'>
+          <Typography variant='h4' className='max-lg:text-center text-[#323232] max-lg:mt-44 mt-4rem'>
         Welcome to the Feeds! We're under construction!!
       </Typography>
         </Tabs.Content>
