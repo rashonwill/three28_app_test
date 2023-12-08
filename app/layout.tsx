@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
 <>
   <html lang='en'>
-    <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2757853973462691" strategy="afterInteractive" />
+{/*     <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2757853973462691" strategy="afterInteractive" />
     <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-177LE1JR6C" />
     <Script id="google-analytics" strategy="afterInteractive">
       {`
@@ -85,7 +85,7 @@ export default function RootLayout({
 <img height="1" width="1" 
 src="https://www.facebook.com/tr?id=737404921084988&ev=PageView
 &noscript=1"/>
-</noscript>
+</noscript> */}
     
       <body className={`${teko.className} ${teko.variable} `}>
         <h1 className="text-[transparent] z-0 absolute">Three28</h1>
