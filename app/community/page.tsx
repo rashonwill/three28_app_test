@@ -20,6 +20,8 @@ import Browse from '@/app/(explorer)/browse';
 import PaytoView from '@/app/(explorer)/paytoview';
 import Home2 from '@/app/(explorer)/home';
 
+import Home from './home';
+import Feeds from './feed';
 
 export default function Community() {
   const { isSearching, setSearching } = useSearch();
@@ -47,7 +49,7 @@ export default function Community() {
   
   return (
     <>
-          <Head>
+      <Head>
         <title>Three28| Community</title>
     </Head> 
        <section className='lg:container max-lg:mb-20'>
@@ -69,14 +71,10 @@ export default function Community() {
           ))}
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
-          <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
-        Welcome to the Coummunity! We're under construction!!
-      </Typography>
+          <Home />
         </Tabs.Content>
         <Tabs.Content value='Feed' className='w-full'>
-          <Typography variant='h4' className='max-lg:text-center text-[#323232] max-lg:mt-44 mt-4rem'>
-        Welcome to the Feeds! We're under construction!!
-      </Typography>
+          <Feeds />
         </Tabs.Content>
       </Tabs.Root>
       <Tabs.Root defaultValue='Home' className='flex flex-col lg:hidden'>
