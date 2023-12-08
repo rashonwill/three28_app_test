@@ -16,9 +16,9 @@ import Icon from '@/components/atoms/icon';
 import useSearch from '@/lib/store/search-store';
 import SearchResult from '@/components/organisms/search-result';
 import SearchedCard from '@/components/molecules/searched-card';
-import Browse from './browse';
-import PaytoView from './paytoview';
-import Home2 from './home';
+import Browse from '@/app/(explorer)/browse';
+import PaytoView from '@/app/(explorer)/paytoview';
+import Home2 from '@/app/(explorer)/home';
 
 
 export default function Community() {
