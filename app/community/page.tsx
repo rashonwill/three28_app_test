@@ -117,9 +117,7 @@ export default function Community() {
          </section>
         </Tabs.Content>
         <Tabs.Content value='Community' className='w-full px-1'>
-          <Typography variant='h2' className='max-lg:text-center text-[#323232] max-lg:mt-44 mt-4rem'>
-        Welcome to the Coummunity! We're under construction!!
-      </Typography>
+          <Home3 />
         </Tabs.Content>
       </Tabs.Root>
     </section>
