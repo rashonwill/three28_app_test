@@ -17,7 +17,7 @@ return (
           </div>
             
           <Image
-        src={'/assets/images/logo.svg'}
+        src={'/assets/images/Android.png'}
         alt='welcome photo'
         className="w-1/2 h-full"
         />
