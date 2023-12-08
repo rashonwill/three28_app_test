@@ -20,7 +20,7 @@ import Browse from '@/app/(explorer)/browse';
 import PaytoView from '@/app/(explorer)/paytoview';
 import Home2 from '@/app/(explorer)/home';
 
-import Home from './home';
+import Home3 from './home';
 import Feeds from './feed';
 
 export default function Community() {
@@ -71,7 +71,7 @@ export default function Community() {
           ))}
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
-          <Home />
+          <Home3 />
         </Tabs.Content>
         <Tabs.Content value='Feed' className='w-full'>
           <Feeds />
