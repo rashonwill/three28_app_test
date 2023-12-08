@@ -4,20 +4,18 @@ import { useState } from "react";
 import Button from '@/components/atoms/button';
 import Input from '@/components/atoms/input';
 import Typography from '@/components/atoms/typography';
-import { EyeOff, User2 } from 'lucide-react';
+import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, Users } from 'lucide-react';
 import Link from 'next/link';
 import _ from "underscore";
 import Head from 'next/head'
 import * as Tabs from '@radix-ui/react-tabs';
 import * as Separator from '@radix-ui/react-separator';
-import Input from '@/components/atoms/input';
 import { InputEdit } from '@/components/atoms/input-edit';
 import Icon from '@/components/atoms/icon';
 
 import useSearch from '@/lib/store/search-store';
 import SearchResult from '@/components/organisms/search-result';
 import SearchedCard from '@/components/molecules/searched-card';
-import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, Users } from 'lucide-react';
 import Browse from './browse';
 import PaytoView from './paytoview';
 import Home2 from './home';
