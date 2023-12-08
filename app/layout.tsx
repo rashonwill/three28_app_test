@@ -34,7 +34,7 @@ export const metadata = {
     maximumScale: 1,
   },
     alternates: {
-    canonical: 'https://three28.app/',
+    canonical: 'https://three28-test.netlify.app/',
   },
 }
 
