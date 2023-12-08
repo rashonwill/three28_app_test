@@ -88,8 +88,9 @@ export default function Community() {
                     <div className="flex items-center justify-center shrink-0 shrink-0 h-[1.25em] w-[1.25em]"><img alt="Discussion" className="text-content-subdued group-hover:text-content-hovered object-scale-down shrink-0 rounded-base-sm shrink-0 h-[1.25em] w-[1.25em]" width="1.25em" height="1.25em" aria-hidden="true" src="https://tribe-s3-production.imgix.net/wWVKUE303mBMZUHAfc1tM?fit=max&amp;w=200&amp;auto=compress,format"></div></div></div>
                     <span className="flex-grow truncate">Discussion</span></a><a className="cursor-pointer rounded-base group flex items-center rounded-base w-full transition duration-200 bg-background text-content-on-background-subdued hover:bg-background-hovered hover:text-content-on-background-hovered focus:outline-none focus-visible:ring ring-inset ring-offset-0 px-3 py-2" href="/events"><div className="me-3 -ms-1"><div className="relative text-content-on-background">
                       <div className="flex items-center justify-center shrink-0 shrink-0 h-[1.25em] w-[1.25em]"><img alt="Events" className="text-content-subdued group-hover:text-content-hovered object-scale-down shrink-0 rounded-base-sm shrink-0 h-[1.25em] w-[1.25em]" width="1.25em" height="1.25em" aria-hidden="true" src="https://tribe-s3-production.imgix.net/l8KH9f5PLWodChxJFXANN?fit=max&amp;w=200&amp;auto=compress,format"></div></div></div><span className="flex-grow truncate">Events</span></a></div></div></div>
+                     </>
         </Tabs.Content>
-          </>
+       
           
       </Tabs.Root>
       <Tabs.Root defaultValue='Home' className='flex flex-col lg:hidden'>
