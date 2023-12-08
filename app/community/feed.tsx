@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 import Typography from '@/components/atoms/typography';
 
 
-export default function Home(){
+export default function Feed(){
 
 return (
       <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
