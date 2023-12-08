@@ -10,7 +10,7 @@ export default function Home(){
 
 return (
           <>
-          <div className="flex rounded-base overflow-hidden shadow-md w-full h-3/4">
+          <div className="flex rounded-2xl overflow-hidden shadow-md w-full h-3/4 bg-[#171717] dark:bg-[#fdfbf9]">
                     
             <div className="flex-1 w-1/2 h-full">
             <Typography variant='h2' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>Welcome to the Three28 community!</Typography>
