@@ -27,7 +27,7 @@ return (
                               
                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-48 p-4 m-4 dark:bg-[#0D0D0D]">
                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>R.E.S.P.E.C.T!</Typography>
-                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>Be respectful of the platform and its' memmbers. We asipre for this to be a happy and encouraging space for creators. </Typography>
+                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>Be respectful of the platform and its' memmbers. We aspire for this to be a happy and encouraging space for creators. </Typography>
                     </div>
                      <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-48 p-4 m-4 text-left dark:bg-[#0D0D0D]">
                      <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>No violent or dangerous content!</Typography>
