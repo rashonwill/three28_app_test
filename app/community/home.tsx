@@ -32,7 +32,7 @@ return (
                      <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
                      <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No violent or dangerous content!</Typography>
                      <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No hate speech, bullying, promotion of violence or any content deemed inappropriate by this platform.</Typography>
-                     </div>   mt-4 
+                     </div>
                               
                      <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
                      <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No Spam!</Typography>
