@@ -26,17 +26,17 @@ return (
                     <div className="flex flex-wrap w-full items-center">
                               
                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
-                    <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>R.E.S.P.E.C.T!</Typography>
-                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>Be respectful of the platform and its' memmbers. We aspire for this to be a happy and encouraging space for creators. </Typography>
+                    <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 dark:text-[#fdfbf9]'>R.E.S.P.E.C.T!</Typography>
+                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 dark:text-[#fdfbf9]'>Be respectful of the platform and its' memmbers. We aspire for this to be a happy and encouraging space for creators. </Typography>
                     </div>
-                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 text-left dark:bg-[#0D0D0D]">
-                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>No violent or dangerous content!</Typography>
-                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>No hate speech, bullying, promotion of violence or any content deemed inappropriate by this platform.</Typography>
-                     </div>   
+                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
+                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No violent or dangerous content!</Typography>
+                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No hate speech, bullying, promotion of violence or any content deemed inappropriate by this platform.</Typography>
+                     </div>   mt-4 
                               
-                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 text-left dark:bg-[#0D0D0D]">
-                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>No Spam!</Typography>
-                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>It's ok to promote, but do not spam the community.</Typography>
+                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
+                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>No Spam!</Typography>
+                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-44 mt-4 dark:text-[#fdfbf9]'>It's ok to promote, but do not spam the community.</Typography>
                      </div>         
                     
                     </div>
