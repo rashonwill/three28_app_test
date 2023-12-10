@@ -64,7 +64,6 @@ const MobileNav = forwardRef<HTMLDivElement, MobileNavProps>(
           </Tabs.List>
           <Tabs.Content value='Home' className='w-full px-1'>
             {Main}
-{/*             <Browse /> */}
           </Tabs.Content>
           <Tabs.Content value='Discover' className='w-full px-8 flex flex-col gap-3 mt-[8rem]'>
            <Home2 />
