@@ -112,7 +112,7 @@ export default function Page() {
         <Tabs.Content value='Home' className='w-full px-1'>
           <Browse />
         </Tabs.Content>
-        <Tabs.Content value='Discover' className='w-full px-8 flex flex-col gap-3 max-lg:flex-row justify-center items-center'>
+        <Tabs.Content value='Discover' className='w-full px-8 flex flex-wrap gap-3 max-lg:justify-center items-center'>
           <Home2 />
         </Tabs.Content>
         
