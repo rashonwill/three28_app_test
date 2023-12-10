@@ -83,7 +83,7 @@ const MobileNav = forwardRef<HTMLDivElement, MobileNavProps>(
               />
             <SearchResult />
           </Tabs.Content>
-          <Tabs.Content value='Community' className='w-full px-8 flex flex-col gap-3 mt-[4rem]'>
+          <Tabs.Content value='Community' className='w-full px-8 flex flex-col gap-3 mt-[4rem] max-lg:justify-center items-center'>
            <Community />
           </Tabs.Content>
         </Tabs.Root>
