@@ -116,7 +116,7 @@ export default function Community() {
             <SearchResult />
          </section>
         </Tabs.Content>
-        <Tabs.Content value='Community' className='w-full px-1'>
+        <Tabs.Content value='Community' className='w-full px-1 max-lg:justify-center items-center'>
           <Home3 />
         </Tabs.Content>
       </Tabs.Root>
