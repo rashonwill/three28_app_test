@@ -9,6 +9,7 @@ import {
   Search,
   User2,
   Compass,
+  Users,
 } from 'lucide-react';
 import { HtmlHTMLAttributes, forwardRef, useState } from 'react';
 import Input from '../atoms/input';
@@ -21,6 +22,7 @@ import PaytoView from '@/app/(explorer)/paytoview';
 import Home2 from '@/app/(explorer)/home';
 import Profile from '@/app/(profile)/user/page';
 import Browse from '@/app/(explorer)/browse';
+import Community from '@/app/community/home';
 
 interface MobileNavProps extends HtmlHTMLAttributes<HTMLDivElement> {
   Main: React.ReactNode;
@@ -81,9 +83,9 @@ const MobileNav = forwardRef<HTMLDivElement, MobileNavProps>(
               />
             <SearchResult />
           </Tabs.Content>
-{/*           <Tabs.Content value='Profile' className='w-full px-1 mt-0 pt-0'>
-            {Main}
-          </Tabs.Content> */}
+          <Tabs.Content value='Community' className='w-full px-8 flex flex-col gap-3 mt-[4rem]'>
+           <Community />
+          </Tabs.Content>
         </Tabs.Root>
       </div>
     );
@@ -98,6 +100,6 @@ const tabsMobile = [
   { title: 'Discover', icon: Compass },
   { title: 'Pay to View', icon: CircleDollarSign },
   { title: 'Search', icon: Search },
-  // { title: 'Profile', icon: User2 },
+  { title: 'Community', icon: Users },
   
 ];
