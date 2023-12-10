@@ -23,7 +23,7 @@ return (
         />
           </div>
                     <Typography variant='h3' className='max-lg:text-center text-[#171717] text-left m-5 max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>Community Rules</Typography>
-                    <div className="flex flex-wrap w-full">
+                    <div className="flex flex-wrap w-full max-lg:justify-center items-center">
                               
                     <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
                     <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-1 dark:text-[#fdfbf9]'>R.E.S.P.E.C.T!</Typography>
