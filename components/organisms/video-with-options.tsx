@@ -41,7 +41,7 @@ export function VideoWithOptions({
 
   
   return (
-    <div className='relative rounded-2xl max-lg:flex-row w-full dark:shadow-[#171717] shadow-lg bg-red-400'>
+    <div className='relative rounded-2xl w-full dark:shadow-[#171717] shadow-lg'>
       <Video
         favorite={favorite!}
         watcher={watcher!}
