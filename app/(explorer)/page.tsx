@@ -13,7 +13,7 @@ import Community from '@/app/community/home';
 import useSearch from '@/lib/store/search-store';
 import SearchResult from '@/components/organisms/search-result';
 import SearchedCard from '@/components/molecules/searched-card';
-import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, users } from 'lucide-react';
+import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, Users } from 'lucide-react';
 import Input from '@/components/atoms/input';
 import { InputEdit } from '@/components/atoms/input-edit';
 import Icon from '@/components/atoms/icon';
