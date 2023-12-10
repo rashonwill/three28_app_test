@@ -9,10 +9,11 @@ import Watchlist from './watchlist';
 import * as Separator from '@radix-ui/react-separator';
 import Favorites from './favorites';
 import History from './history';
+import Community from '@/app/community/home';
 import useSearch from '@/lib/store/search-store';
 import SearchResult from '@/components/organisms/search-result';
 import SearchedCard from '@/components/molecules/searched-card';
-import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass } from 'lucide-react';
+import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, users } from 'lucide-react';
 import Input from '@/components/atoms/input';
 import { InputEdit } from '@/components/atoms/input-edit';
 import Icon from '@/components/atoms/icon';
@@ -111,7 +112,7 @@ export default function Page() {
         <Tabs.Content value='Home' className='w-full px-1'>
           <Browse />
         </Tabs.Content>
-        <Tabs.Content value='Discover' className='w-full px-8 flex flex-col gap-3'>
+        <Tabs.Content value='Discover' className='w-full px-8 flex flex-col gap-3 max-lg:flex-row justify-center items-center'>
           <Home2 />
         </Tabs.Content>
         
@@ -132,6 +133,9 @@ export default function Page() {
             <SearchResult />
          </section>
         </Tabs.Content>
+            <Tabs.Content value='Community' className='w-full px-8'>
+          <Community />
+        </Tabs.Content>
       </Tabs.Root>
     </section>
         </>
@@ -150,5 +154,6 @@ const tabsMobile = [
   { title: 'Discover', icon: Compass },
   { title: 'Pay to View', icon: CircleDollarSign },
   { title: 'Search', icon: Search },
+  { title: 'Community', icon: Users },
   
 ];
