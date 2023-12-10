@@ -43,7 +43,7 @@ const videoPlay = (uuid: any, channelid: any) =>{
     <section className='h-full basis-4/12'>
     <Typography variant='h4'>Suggested Videos</Typography>
     <br />
-       <div className='flex flex-col gap-3 px-4' >
+       <div className='flex flex-col gap-3 px-4 max-lg:justify-center items-center' >
       {suggested && suggested.length > 0 ? suggested.map((uploads) => {
          return (
            <div onClick={() => videoPlay(uploads.uuid, uploads.channelid)} key={uploads.id} className="">
