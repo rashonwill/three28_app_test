@@ -46,7 +46,7 @@ const purchasePlay = (uuid: any, channelid: any) =>{
   
   return (
     <>
-    <div className='flex flex-row gap-3 flex-wrap [&>*]:max-w-xs pt-16'>
+    <div className='flex flex-row gap-3 flex-wrap [&>*]:max-w-xs pt-16 max-lg:justify-center items-center'>
       {paid && paid.length > 0 ? paid.map((uploads) => {
          return(
          <div id="card" onClick={() =>  purchasePlay(uploads.uuid, uploads.channelid)} key={uploads.id} className="w-80 max-w-md">  
