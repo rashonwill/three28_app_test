@@ -133,7 +133,7 @@ export default function Page() {
             <SearchResult />
          </section>
         </Tabs.Content>
-            <Tabs.Content value='Community' className='w-full px-8'>
+            <Tabs.Content value='Community' className='w-full px-8 max-lg:justify-center items-center'>
           <Community />
         </Tabs.Content>
       </Tabs.Root>
