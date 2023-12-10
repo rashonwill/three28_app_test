@@ -10,7 +10,7 @@ export default function Browse() {
         <br className='lg:hidden' />
         <SuggestedVideo />
       </section>
-      <section className='flex w-full max-lg:flex-row '>
+      <section className='flex w-full max-lg:flex-row w-1/2 '>
         <MoreVideos />
       </section>
     </>
