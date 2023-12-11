@@ -36,7 +36,7 @@ return (
                               
                      <div className="rounded-2xl overflow-hidden shadow-md max-w-md h-52 p-4 m-4 dark:bg-[#0D0D0D]">
                      <Typography variant='h4' className='max-lg:text-center text-[#171717] max-lg:mt-1 dark:text-[#fdfbf9]'>No Spam!</Typography>
-                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-1 dark:text-[#fdfbf9]'>It's ok to promote, but do not spam the community.</Typography>
+                     <Typography variant='h5' className='max-lg:text-center text-[#171717] max-lg:mt-1 dark:text-[#fdfbf9]'>It's ok to promote your page and content, but do not spam or abuse the community tool excessively.</Typography>
                      </div>         
                     
                     </div>
