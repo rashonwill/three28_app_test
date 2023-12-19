@@ -12,7 +12,6 @@ import { ThumbsUp, MessageCircle } from 'lucide-react';
 import * as Separator from '@radix-ui/react-separator';
 
 export default function Post({
-  className,
   src,
   title,
   handle,
