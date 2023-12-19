@@ -79,13 +79,13 @@ return (
       <>
             <div className='flex justify-center mt-8 gap-1.5 -translate-y-1/2 max-lg:hidden'>
             <div className="w-full h-full">
-                  <div className="h-[2rem] w-4/5">
+                  <div className="h-[2rem] w-3/5">
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
 		    
 		    <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
 		    
-            <div className="flex justify-right">
+            <div className="flex justify-right gap-1.5">
             <Typography variant="h5">Photo</Typography><Camera />
             </div>
 		    
