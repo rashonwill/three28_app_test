@@ -86,7 +86,7 @@ return (
 		    
 		    <Separator.Root className='w-9/12 h-px my-6 bg-black/40 dark:bg-white/40' />
 		    
-            <div className="flex justify-right gap-1.5 pointer-cursor">
+            <div className="flex justify-end gap-1.5 cursor-pointer w-9/12">
             <Typography variant="h5">Photo</Typography><Camera />
             </div>
 		    
