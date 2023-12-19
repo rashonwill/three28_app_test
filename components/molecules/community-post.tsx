@@ -31,7 +31,7 @@ export function PostCard({
 }) {
 return (
     <>
-        <div className="flex flex-col justify-center items-center mt-1 h-[40rem] w-9/12 dark:bg-[#0D0D0D]">
+        <div className="flex flex-col justify-center mt-1 h-[45rem] w-9/12 dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
         <div className='flex items-center '>
           <Avatar src={avatar} className='origin-left scale-50' />
