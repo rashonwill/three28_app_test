@@ -24,7 +24,7 @@ return (
       <>
             <div className='flex justify-center gap-1.5 -translate-y-1/2 max-lg:hidden'>
 {/*             <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
-            <div clasName="w-1/2 h-full">
+            <div className="w-1/2 h-full">
                   <div>
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
