@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/lib/utils';
 import Alert from '@mui/material/Alert';
 import * as Popover from '@radix-ui/react-popover';
