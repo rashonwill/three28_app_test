@@ -78,7 +78,8 @@ const myToken = localStorage.getItem("fariToken");
 return (
       <>
             <div className='flex justify-center mt-8 gap-1.5 -translate-y-1/2 max-lg:hidden'>
-            <div className="w-full h-full">
+                <div className=" w-3/5 h-full">
+			
                   <div className="h-[2rem] w-3/5">
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
