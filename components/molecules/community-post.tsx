@@ -11,48 +11,21 @@ import Image from 'next/image'
 import { ThumbsUp, MessageCircle } from 'lucide-react';
 import * as Separator from '@radix-ui/react-separator';
 
-interface CompType {
-  src: string;
-  poster: string;
-  spotlight?: boolean;
-  search?: boolean;
-  title: string;
-  uuid: string;
-  favorite?: boolean;
-  watcher?: boolean;
-  profile?: boolean;
-  payable?: number;
-  favorites?: any[];
-  setFavorites?: Function;
-  watchlist?: any[];
-  setWatchlist?: Function;
-}
-
 export default function Post({
   className,
-  title,
-  uuid,
-  spotlight,
-  payable,
-  search,
-  profile,
-  favorite,
-  watcher,
   src,
-  poster,
-  favorites,
-  setFavorites,
-  watchlist,
-  setWatchlist,
-  ...props
-}: HtmlHTMLAttributes<HTMLDivElement> & CompType) {
-  const [video, setVideo] = useState<any[]>([]);
-  const [videoArr, setVideoArr] = useState({});
-  const [listed, setListed] = useState(false);
-  const myToken = localStorage.getItem('fariToken');
-
-  
-  return (
+  title,
+  handle,
+  user,
+  avatar,
+}: {
+  src?: string;
+  title?: string;
+  handle: string; 
+  user: string;
+  avatar: string;
+}) {
+return (
     <>
     <div className="flex flex-col justify-center mt-1 w-9/12 dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
