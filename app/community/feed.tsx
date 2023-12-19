@@ -11,6 +11,7 @@ import * as Separator from '@radix-ui/react-separator';
 
 export default function Feed(){
  const [newpost, setPost] = useState('');
+  const [postcomment, setPostComment] = useState('');
   const [progress, setProgress] = useState({started: false, rate: 0});
   const [message, setMessage] = useState('');
   // const FARI_API = 'https://www.fariapi.com/api';
@@ -20,23 +21,43 @@ export default function Feed(){
     setPost(event.target.value)
   }
 
-  async function newPost() {
-  let comRemark = newVideoComment;
+async function getUserProfile() {
+const myToken = localStorage.getItem("fariToken");
+  try {
+    const response = await fetch(`${FARI_API}/users/myprofile`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${myToken}`,
+      },
+    });
+    const data = await response.json();
+    if (data.profile.length === 0) {
+      window.location.href = "/login";
+    }
+    return data.profile;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+  async function newComment() {
+  let comRemark = postcomment;
   var profile = await getUserProfile();
   var username = localStorage.getItem("userUsername");
   var userid = localStorage.getItem("userID");
-  var postId = localStorage.getItem("videoID");
+  var postId = localStorage.getItem("postID");
   const myToken = localStorage.getItem("fariToken");
 
   const userRemark = {
     commentorid: userid,
     commentorname: username,
     user_comment: comRemark,
-    video_uuid: postId,
+    postid: postId,
   };
 	 
   try {
-    const response = await fetch(`${FARI_API}/community/new-post`, {
+    const response = await fetch(`${FARI_API}/community/comment/new`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,9 +66,9 @@ export default function Feed(){
       body: JSON.stringify(userRemark),
     });
     const data = await response.json();
-    updateCommentCount();
-    getComments();
-    setNewComment('')
+    // updateCommentCount();
+    // getComments();
+    // setNewComment('')
     return data.comment;
   } catch (error) {
     console.log(error)
