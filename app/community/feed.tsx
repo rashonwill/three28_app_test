@@ -77,16 +77,18 @@ const myToken = localStorage.getItem("fariToken");
 
 return (
       <>
-            <div className='flex justify-center gap-1.5 -translate-y-1/2 max-lg:hidden'>
-{/*             <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
-            <div className="w-1/2 h-full">
-                  <div>
+            <div className='flex justify-center mt-8 gap-1.5 -translate-y-1/2 max-lg:hidden'>
+            <div className="w-full h-full">
+                  <div className="h-[2rem] w-4/5">
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
+		    
 		    <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
+		    
             <div className="flex justify-right">
-            <Typography variant="h5">Photo <Camera /></Typography>
+            <Typography variant="h5">Photo</Typography><Camera />
             </div>
+		    
             </div>
             </div>
         <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
