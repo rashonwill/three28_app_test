@@ -83,8 +83,9 @@ return (
                   <div>
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
-            <div>
-            <Typography>Photo <Camera /></Typography>
+		    <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
+            <div className="flex justify-right">
+            <Typography variant="h5">Photo <Camera /></Typography>
             </div>
             </div>
             </div>
