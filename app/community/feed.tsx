@@ -20,13 +20,47 @@ export default function Feed(){
     setPost(event.target.value)
   }
 
+  async function newPost() {
+  let comRemark = newVideoComment;
+  var profile = await getUserProfile();
+  var username = localStorage.getItem("userUsername");
+  var userid = localStorage.getItem("userID");
+  var postId = localStorage.getItem("videoID");
+  const myToken = localStorage.getItem("fariToken");
+
+  const userRemark = {
+    commentorid: userid,
+    commentorname: username,
+    user_comment: comRemark,
+    video_uuid: postId,
+  };
+	 
+  try {
+    const response = await fetch(`${FARI_API}/community/new-post`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${myToken}`,
+      },
+      body: JSON.stringify(userRemark),
+    });
+    const data = await response.json();
+    updateCommentCount();
+    getComments();
+    setNewComment('')
+    return data.comment;
+  } catch (error) {
+    console.log(error)
+  }
+};
+
 return (
       <>
             <div className='flex justify-center gap-1.5 -translate-y-1/2 max-lg:hidden'>
 {/*             <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
             <div className="w-1/2 h-full">
                   <div>
-                  <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
+                  <InputEdit placeholder='New Post' btn='Post' onClick={newPost} onChange={updatePost} value={newpost} />
                   </div>
                   <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
             <div>
