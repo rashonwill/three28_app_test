@@ -81,7 +81,7 @@ return (
 {/*             <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
             <div className="w-1/2 h-full">
                   <div>
-                  <InputEdit placeholder='New Post' btn='Post' onClick={newPost} onChange={updatePost} value={newpost} />
+                  <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
                   <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
             <div>
