@@ -83,7 +83,6 @@ return (
                   <div>
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
-                  <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
             <div>
             <Typography>Photo <Camera /></Typography>
             </div>
