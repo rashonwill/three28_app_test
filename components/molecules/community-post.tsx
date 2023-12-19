@@ -11,7 +11,7 @@ import Image from 'next/image'
 import { ThumbsUp, MessageCircle } from 'lucide-react';
 import * as Separator from '@radix-ui/react-separator';
 import Avatar from '../atoms/avatar';
-
+import Button from '../atoms/button';
 
 export default function Post({
   src,
