@@ -92,10 +92,11 @@ return (
 		    
             </div>
             </div>
-        <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
-        FEEDS!
-      </Typography>
-      <PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
+        <div className="flex flex-col justify-center items-center gap-1.5">
+	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
+	
+	</div>
+      
       </>
     
 )
