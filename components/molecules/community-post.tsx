@@ -10,6 +10,8 @@ import EditModal from './edit-modal';
 import Image from 'next/image'
 import { ThumbsUp, MessageCircle } from 'lucide-react';
 import * as Separator from '@radix-ui/react-separator';
+import Avatar from '../atoms/avatar';
+
 
 export default function Post({
   src,
