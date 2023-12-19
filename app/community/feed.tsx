@@ -7,7 +7,7 @@ import Button from '@/components/atoms/button';
 import { PenLine, Camera } from 'lucide-react';
 import { InputEdit } from '@/components/atoms/input-edit';
 import * as Separator from '@radix-ui/react-separator';
-
+import { PostCard } from '@/components/molecules/community-post';
 
 export default function Feed(){
  const [newpost, setPost] = useState('');
@@ -95,7 +95,7 @@ return (
         <Typography variant='h3' className='max-lg:text-center text-[#171717] text-center max-lg:mt-44 mt-4rem dark:text-[#fdfbf9]'>
         FEEDS!
       </Typography>
-      
+      <PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" />
       </>
     
 )
