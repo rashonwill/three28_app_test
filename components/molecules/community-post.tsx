@@ -14,7 +14,7 @@ import * as Separator from '@radix-ui/react-separator';
 import Avatar from '../atoms/avatar';
 import Button from '../atoms/button';
 
-export default function PostCard({
+export function PostCard({
   src,
   title,
   handle,
