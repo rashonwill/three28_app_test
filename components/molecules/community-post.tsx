@@ -36,7 +36,6 @@ export function PostCard({
  const [editMode, setEditMode] = useState(false);
  const [showMore, setShowMore] = useState(false);
  const messageRef = useRef<HTMLParagraphElement>(null);
- // const [textpost, setTextPost] = useState(false);	
 	
   useEffect(() => {
     // #note checking the overflow for line-clamp
@@ -159,7 +158,7 @@ return (
         </div>
 	      
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
-	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
+	      <div className="relative flex transition-all sm:text-[#545454] ">
 		      
 		<div className="flex gap-1.5 justify-start">
 			
