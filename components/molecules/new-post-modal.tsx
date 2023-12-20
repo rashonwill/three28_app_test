@@ -6,9 +6,9 @@ import * as ScrollArea from '@radix-ui/react-scroll-area';
 import _ from 'underscore';
 import { useState, useEffect } from "react";
 import axios from "axios";
-import './message.scss';
 
-export default function MessageModal({
+
+export default function PostModal({
   children,
 }: {
   children: React.ReactNode;
