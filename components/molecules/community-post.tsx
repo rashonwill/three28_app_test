@@ -61,10 +61,11 @@ return (
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Like <ThumbsUp /></Button>
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Comment <MessageCircle /></Button>
       </div>
+	      
       </div>
-      
+      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
       </div>
-     <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
+     
 
 	        
     
