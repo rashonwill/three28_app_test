@@ -4,7 +4,7 @@ import Alert from '@mui/material/Alert';
 import * as Popover from '@radix-ui/react-popover';
 import { MoreHorizontal, Pencil, Play, Trash2, Check } from 'lucide-react';
 import Link from 'next/link';
-import { HtmlHTMLAttributes, useCallback, useState } from 'react';
+import { HtmlHTMLAttributes, useCallback, useState, useEffect, useRef } from 'react';
 import _ from 'underscore';
 import Typography from '../atoms/typography';
 import EditModal from './edit-modal';
@@ -29,6 +29,22 @@ export function PostCard({
   avatar: string;
   originator?: boolean;	
 }) {
+
+ const [expand, setExpand] = useState(false);
+ const [editMode, setEditMode] = useState(false);
+ const [showMore, setShowMore] = useState(false);
+ const messageRef = useRef<HTMLParagraphElement>(null);
+	
+  useEffect(() => {
+    // #note checking the overflow for line-clamp
+    if (
+      messageRef.current?.clientHeight! <
+      messageRef.current?.scrollHeight! - 1
+    )
+      setShowMore(true);
+  }, []);
+
+	
 return (
     <>
         <div className="flex flex-col justify-center mt-1 h-[50rem] w-3/5 shadow-xl dark:bg-[#0D0D0D]">
@@ -40,7 +56,22 @@ return (
 	</Link>
       
       <div className="w-full h-full p-2">
-        <Typography variant="h5">{title}</Typography>
+	      <p
+            ref={messageRef}
+            className={cn('text-2xl', { 'line-clamp-2': !expand })}
+          >
+            {title}
+          </p>
+{/*         <Typography variant="h5"></Typography> */}
+	       {showMore && (
+        <button
+          onClick={() => setExpand((p) => !p)}
+          className='self-end ml-4 whitespace-nowrap'
+	  aria-label="view full message"
+        >
+          View {expand ? 'Less' : 'More'}
+        </button>
+      )}
         <div className="">
         <Image
           className='w-full h-[31rem]'
