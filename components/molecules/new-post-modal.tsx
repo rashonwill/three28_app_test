@@ -122,7 +122,8 @@ export default function PostModal({
           <ScrollArea.Root>
             <ScrollArea.Viewport className='h-full py-10 '>
               <InputEdit placeholder="What's happening?" onChange={updateMessage} value={newpost}/>
-                <input
+              <div className="">
+              <input
               type='file'
               accept=".jpeg, .png, .jpg, .gif"
               onChange={(e) =>
@@ -132,8 +133,9 @@ export default function PostModal({
               ref={thumbRef}
               className='hidden'
               name="post-image"
-              required
             />
+              </div>
+
               <div className="flex flex-col items-center justify-center gap-2 w-full h-[4rem] mt-[3rem]">
 {/*                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{progress.rate}% complete </span>} */}
 {/*                {progress.started && <progress className="w-[32rem]" max="100" value={progress.rate}></progress>} */}
