@@ -93,7 +93,7 @@ return (
             </div>
             </div>
         <div className="flex flex-col justify-center items-center gap-1.5">
-	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1701361356911_Social_Profile_Facebook.jpg" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
+	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1703081774018_Color logo with background.png" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
 	
 	</div>
       
