@@ -78,7 +78,7 @@ const myToken = localStorage.getItem("fariToken");
 return (
       <>
             <div className='flex justify-end mt-20 mb-20 gap-1.5 -translate-y-1/2 max-lg:hidden '>
-		                <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button>
+		                <Button accent className='px-4 flex items-center gap-2 h-'>New Post <PenLine /></Button>
 {/*                 <div className=" w-9/12 h-full rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
 			
                   <div className="h-full w-9/12">
