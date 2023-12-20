@@ -4,7 +4,7 @@ import { InputEdit } from '@/components/atoms/input-edit';
 import * as Dialog from '@radix-ui/react-dialog';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 import _ from 'underscore';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 
