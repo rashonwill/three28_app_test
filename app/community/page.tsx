@@ -69,7 +69,7 @@ export default function Community() {
               )}
             </>
           ))}
-          <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="new community post">New Post <PenLine /></button>
+          <button className='flex px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="new community post">New Post <PenLine /></button>
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
           <Home3 />
