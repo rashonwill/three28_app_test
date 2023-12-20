@@ -56,22 +56,26 @@ return (
 	</Link>
       
       <div className="w-full h-full p-2">
-	      <p
+	      <div className="">
+	      	      <p
             ref={messageRef}
             className={cn('text-2xl', { 'line-clamp-2': !expand })}
           >
             {title}
           </p>
-{/*         <Typography variant="h5"></Typography> */}
-	       {showMore && (
+	</div>
+
+	{showMore && (
         <button
           onClick={() => setExpand((p) => !p)}
-          className='self-end ml-4 whitespace-nowrap'
+          className='self-end whitespace-nowrap pb-2'
 	  aria-label="view full message"
         >
           View {expand ? 'Less' : 'More'}
         </button>
       )}
+
+
         <div className="">
         <Image
           className='w-full h-[31rem]'
@@ -79,6 +83,7 @@ return (
           alt='post image'
           />
         </div>
+	      
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
 	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
 		      
