@@ -94,7 +94,9 @@ return (
             </div> */}
             </div>
         <div className="flex flex-col justify-center items-center gap-1.5">
-	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1703081774018_Color logo with background.png" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
+	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1703081774018_Color logo with background.png" title="Welcome to Three28! Brand new video sharing platform that allows content creeators to earn and profit how they see fit. Control the padding on one side of an element using the p{t|r|b|l}-{size} utilities.
+
+For example, pt-6 would add 1.5rem of padding to the top of an element, pr-4 would add 1rem of padding to the right of an element, pb-8 would add 2rem of padding to the bottom of an element, and pl-2 would add 0.5rem of padding to the left of an element." user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
 	
 	</div>
       
