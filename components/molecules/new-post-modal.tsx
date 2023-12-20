@@ -1,0 +1,121 @@
+'use client';
+import Button from '@/components/atoms/button';
+import { InputEdit } from '@/components/atoms/input-edit';
+import * as Dialog from '@radix-ui/react-dialog';
+import * as ScrollArea from '@radix-ui/react-scroll-area';
+import _ from 'underscore';
+import { useState, useEffect } from "react";
+import axios from "axios";
+import './message.scss';
+
+export default function MessageModal({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+
+  const [newpost, setNewPost] = useState('');
+  const [progress, setProgress] = useState({started: false, rate: 0});
+  const [message, setMessage] = useState('');
+  const [image, setImage] = useState('');
+  // const FARI_API = 'https://www.fariapi.com/api';
+  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+
+    const updateMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setNewMessage(event.target.value)
+  }
+
+  async function getChannelProfile() {
+  try {
+    let channelid = localStorage.getItem("visitingChannelID");
+    const response = await fetch(`${FARI_API}/users/channel/${channelid}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await response.json();
+    return data.channel;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+
+
+  async function newPost() {
+  var channelInfo = await getChannelProfile();
+  var post_content = newpost;
+  var post_img = image;
+  var channelid = localStorage.getItem("channelID");
+  var message = newmessage;
+    
+        const uploadData = {
+          post_content: post_content,
+          post_img: post_img,
+          channelid: channelid,
+          };
+    
+    const myToken = localStorage.getItem("fariToken");
+   setMessage('Creating post...')
+   setProgress((prevState: any) => {
+      return {...prevState, started: true}
+    })
+  try {
+    const response = await axios.post(`${FARI_API}/community/new-post`, JSON.stringify(uploadData), {
+     onUploadProgress: (progressEvent: any) => {setProgress((prevState: any) => {                  
+        return {...prevState, rate: Math.round(progressEvent.progress*100) }
+      })},
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${myToken}`,
+      },
+
+    }).then(({ data }) => {
+      // setNewMessage('')
+      // setMessage('')
+      // setMessage('Message sent!'); 
+      // sendEmailNotification();
+        return data;
+      });
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+
+  
+  return (
+    <Dialog.Root>
+      <Dialog.Trigger asChild>{children}</Dialog.Trigger>
+      <Dialog.Portal>
+        <Dialog.Overlay className='fixed inset-0 backdrop-blur' />
+        <Dialog.Content className='fixed z-50 max-w-5xl m-auto overflow-hidden shadow-xl inset-10 h-max bg-background rounded-xl'>
+          <ScrollArea.Root>
+            <ScrollArea.Viewport className='h-full py-10 '>
+              <InputEdit placeholder='Send a message' textarea onChange={updateMessage} value={newpost}/>
+              <div className="flex flex-col items-center justify-center gap-2 w-full h-[4rem] mt-[3rem]">
+{/*                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{progress.rate}% complete </span>} */}
+{/*                {progress.started && <progress className="w-[32rem]" max="100" value={progress.rate}></progress>} */}
+               {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{message}</span>}
+             </div>
+              <div className='flex flex-wrap justify-end gap-10 px-4 mt-24'>
+                  <Button accent className="" onClick={newPost}>
+                    Post
+                  </Button>
+                <Dialog.Close asChild>
+                  <Button accent className="">
+                   Close
+                  </Button>
+                </Dialog.Close>
+              </div>
+            </ScrollArea.Viewport>
+            <ScrollArea.Scrollbar orientation='vertical' />
+          </ScrollArea.Root>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
+  );
+}
