@@ -49,7 +49,7 @@ export default function MessageModal({
   var post_content = newpost;
   var post_img = image;
   var channelid = localStorage.getItem("channelID");
-  var message = newmessage;
+  // var message = newmessage;
     
         const uploadData = {
           post_content: post_content,
