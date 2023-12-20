@@ -49,7 +49,7 @@ return (
           />
         </div>
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
-	      <div className="flex transition-all sm:px-5 text-[#545454] pt-2  ">
+	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
 		      
 		<div className="flex gap-1.5 justify-start">
 			
@@ -64,7 +64,7 @@ return (
 
 	      
 
-	<div className="flex gap-1.5 justify-end">
+	<div className="flex gap-1.5 justify-end absolute right-0">
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Like <ThumbsUp /></Button>
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Comment <MessageCircle /></Button>
       </div>
