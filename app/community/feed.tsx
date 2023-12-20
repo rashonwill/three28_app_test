@@ -78,7 +78,8 @@ const myToken = localStorage.getItem("fariToken");
 return (
       <>
             <div className='flex justify-center mt-20 p-4 gap-1.5 -translate-y-1/2 max-lg:hidden '>
-                <div className=" w-9/12 h-full rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
+		                <Button accent className='flex items-center gap-2 h-'>New Post <PenLine /></Button>
+{/*                 <div className=" w-9/12 h-full rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
 			
                   <div className="h-full w-9/12">
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
@@ -90,7 +91,7 @@ return (
             <Typography variant="h5">Photo</Typography><Camera />
             </div>
 		    
-            </div>
+            </div> */}
             </div>
         <div className="flex flex-col justify-center items-center gap-1.5">
 	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1703081774018_Color logo with background.png" title="Welcome to Three28" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
