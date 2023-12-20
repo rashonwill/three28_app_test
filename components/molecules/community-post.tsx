@@ -31,19 +31,19 @@ export function PostCard({
 }) {
 return (
     <>
-        <div className="flex flex-col justify-center mt-1 h-[45rem] w-9/12 dark:bg-[#0D0D0D]">
+        <div className="flex flex-col justify-center mt-1 h-[48rem] w-3/4 dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
-        <div className='flex items-center '>
+        <div className='flex items-center p-2 '>
           <Avatar src={avatar} className='origin-left scale-50' />
           <Typography variant='h5'>{user}</Typography>
         </div>
 	</Link>
       
-      <div className="w-full h-full">
-        <Typography variant="h4">{title}</Typography>
+      <div className="w-full h-full p-2">
+        <Typography variant="h5">{title}</Typography>
         <div className="">
         <Image
-          className='w-full h-[25rem]'
+          className='w-full h-[32rem]'
           src={src}
           alt='post image'
           />
