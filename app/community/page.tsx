@@ -12,7 +12,7 @@ import * as Tabs from '@radix-ui/react-tabs';
 import * as Separator from '@radix-ui/react-separator';
 import { InputEdit } from '@/components/atoms/input-edit';
 import Icon from '@/components/atoms/icon';
-
+import NewPostModal from '@/components/molecules/new-post-modal';
 import useSearch from '@/lib/store/search-store';
 import SearchResult from '@/components/organisms/search-result';
 import SearchedCard from '@/components/molecules/searched-card';
@@ -22,6 +22,8 @@ import Home2 from '@/app/(explorer)/home';
 
 import Home3 from './home';
 import Feeds from './feed';
+
+
 
 export default function Community() {
   const { isSearching, setSearching } = useSearch();
@@ -69,7 +71,9 @@ export default function Community() {
               )}
             </>
           ))}
+          <NewPostModal>
           <button className='flex px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="new community post">New Post <PenLine /></button>
+          </NewPostModal>
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
           <Home3 />
