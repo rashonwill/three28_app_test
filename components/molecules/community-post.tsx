@@ -48,11 +48,11 @@ return (
           alt='post image'
           />
         </div>
-	      <div className="flex items-center gap-1 transition-all sm:px-5 hover:bg-zinc-400 text-[#545454] dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2] ">
-	      <div className="flex justify-start">
+	      <div className="flex items-center gap-1 transition-all sm:px-5 hover:bg-zinc-400 text-[#545454]  ">
+	      <div className="flex justify-start dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
 	      <Typography variant="h5">0 Likes</Typography>
 	      </div>
-	      <div className="flex justify-end">
+	      <div className="flex justify-end dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
 	      <Typography variant="h5">0 Comments</Typography>
 	      </div>
 	      </div>
