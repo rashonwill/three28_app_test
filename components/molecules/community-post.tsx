@@ -83,13 +83,13 @@ return (
       )}
 
 
-        <div className="">
+{/*         <div className="">
         <Image
           className='w-full h-[31rem]'
           src={src}
           alt='post image'
           />
-        </div>
+        </div> */}
 	      
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
 	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
@@ -149,14 +149,14 @@ return (
         </button>
       )}
 
-{/* 
+
         <div className="">
         <Image
           className='w-full h-[31rem]'
           src={src}
           alt='post image'
           />
-        </div> */}
+        </div>
 	      
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
 	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
