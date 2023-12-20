@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from '@/components/atoms/button';
 import Input from '@/components/atoms/input';
 import Typography from '@/components/atoms/typography';
-import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, Users } from 'lucide-react';
+import { CircleDollarSign, Home, LucideIcon, Search, User2, Compass, Users, PenLine  } from 'lucide-react';
 import Link from 'next/link';
 import _ from "underscore";
 import Head from 'next/head'
@@ -69,6 +69,7 @@ export default function Community() {
               )}
             </>
           ))}
+          <button className='px-6 py-0.5 text-xl sm:text-2xl md:text-[22px]' aria-label="new community post">New Post <PenLine /></button>
         </Tabs.List>
         <Tabs.Content value='Home' className='w-full'>
           <Home3 />
