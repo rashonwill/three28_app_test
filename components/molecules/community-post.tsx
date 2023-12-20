@@ -53,10 +53,10 @@ return (
 		      
 		<div className="flex gap-1.5 justify-start">
 			
-		<div className="p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
+		<div className="h-[3rem] p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
 	      <Typography variant="h6">0 Likes</Typography>
 	      </div>
-	      <div className="p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
+	      <div className="h-[3rem] p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
 	      <Typography variant="h6">0 Comments</Typography>
 	      </div>
 			
