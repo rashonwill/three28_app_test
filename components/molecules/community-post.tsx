@@ -31,7 +31,7 @@ export function PostCard({
 }) {
 return (
     <>
-        <div className="flex flex-col justify-center mt-1 h-[48rem] w-3/5 dark:bg-[#0D0D0D]">
+        <div className="flex flex-col justify-center mt-1 h-[50rem] w-3/5 dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
         <div className='flex items-center p-2 '>
           <Avatar src={avatar} className='origin-left scale-75' />
@@ -48,22 +48,25 @@ return (
           alt='post image'
           />
         </div>
+	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
 	      <div className="flex gap-1 transition-all sm:px-5 text-[#545454] pt-2  ">
 	      <div className="flex justify-start p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
-	      <Typography variant="h5">0 Likes</Typography>
+	      <Typography variant="h6">0 Likes</Typography>
 	      </div>
 	      <div className="flex justify-end p-2 dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2]">
-	      <Typography variant="h5">0 Comments</Typography>
+	      <Typography variant="h6">0 Comments</Typography>
 	      </div>
-	      </div>
+	      
 
 	<div className="flex gap-1.5 p-4 justify-end">
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Like <ThumbsUp /></Button>
       <Button accent className="flex justify-center items-center gap-1.5 rounded-full p-4 dark:bg-[#0D0D0D]">Comment <MessageCircle /></Button>
       </div>
+		      
+	</div>  
 	      
       </div>
-      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
+      
       </div>
      
 
