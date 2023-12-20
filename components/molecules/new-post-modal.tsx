@@ -22,7 +22,7 @@ export default function MessageModal({
   const FARI_API = 'https://fari-prod.herokuapp.com/api';
 
     const updateMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setNewMessage(event.target.value)
+    setNewPost(event.target.value)
   }
 
   async function getChannelProfile() {
