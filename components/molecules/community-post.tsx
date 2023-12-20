@@ -50,10 +50,10 @@ return (
         </div>
 	      <div className="flex items-center gap-1 transition-all sm:px-5 hover:bg-zinc-400 text-[#545454] dark:text-[#fdfbf9] rounded-2xl sm:bg-neutral-200/[.2] ">
 	      <div className="flex justify-start">
-	      <Typography>0 Likes</Typography>
+	      <Typography variant="h5">0 Likes</Typography>
 	      </div>
 	      <div className="flex justify-end">
-	      <Typography>0 Comments</Typography>
+	      <Typography variant="h5">0 Comments</Typography>
 	      </div>
 	      </div>
       
