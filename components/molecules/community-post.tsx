@@ -49,7 +49,7 @@ return (
           />
         </div>
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
-	      <div className="flex gap-1 transition-all sm:px-5 text-[#545454] pt-2  ">
+	      <div className="flex transition-all sm:px-5 text-[#545454] pt-2  ">
 		      
 		<div className="flex gap-1.5 justify-start">
 			
