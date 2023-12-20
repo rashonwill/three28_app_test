@@ -84,6 +84,32 @@ export default function PostModal({
   }
 }
 
+    const thumbRef = useRef<HTMLInputElement>(null);
+
+
+    function putPoster(e: any, start: any) {
+    e.preventDefault();
+  
+  
+  
+    let reader = new FileReader();
+    let file = e.target.files[0]!;
+    let slice_size = 1000 * 1024;
+    
+    let next_slice = start + slice_size + 1;
+    let blob = file.slice(start, next_slice);
+    let url = URL.createObjectURL(file); 
+    
+    
+    setImage(e.target.files[0])
+    reader.onloadend = function (event: any) {
+      
+    $("#post-image").attr("poster", url);
+  };
+  reader.readAsDataURL(blob);
+   
+
+}
 
 
   
@@ -95,7 +121,19 @@ export default function PostModal({
         <Dialog.Content className='fixed z-50 max-w-5xl m-auto overflow-hidden shadow-xl inset-10 h-max bg-background rounded-xl'>
           <ScrollArea.Root>
             <ScrollArea.Viewport className='h-full py-10 '>
-              <InputEdit placeholder='Send a message' textarea onChange={updateMessage} value={newpost}/>
+              <InputEdit placeholder="What's happening?" onChange={updateMessage} value={newpost}/>
+                <input
+              type='file'
+              accept=".jpeg, .png, .jpg, .gif"
+              onChange={(e) =>
+                // setThumb(URL.createObjectURL(e.target.files?.[0]!))
+                putPoster(e, 0)
+              }
+              ref={thumbRef}
+              className='hidden'
+              name="post-image"
+              required
+            />
               <div className="flex flex-col items-center justify-center gap-2 w-full h-[4rem] mt-[3rem]">
 {/*                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{progress.rate}% complete </span>} */}
 {/*                {progress.started && <progress className="w-[32rem]" max="100" value={progress.rate}></progress>} */}
