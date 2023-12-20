@@ -54,7 +54,7 @@ return (
 	    {textPost ? (
 	    <>
 	    
-	    <div className="flex flex-col justify-center mt-1 h-[50rem] w-3/5 shadow-xl dark:bg-[#0D0D0D]">
+	    <div className="flex flex-col justify-center mt-1 w-3/5 shadow-xl dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
         <div className='flex items-center p-2 '>
           <Avatar src={avatar} className='origin-left scale-75' />
@@ -121,7 +121,7 @@ return (
 
 	    ) : (
 	    <>
-	    	    <div className="flex flex-col justify-center mt-1 w-3/5 shadow-xl dark:bg-[#0D0D0D]">
+	    <div className="flex flex-col justify-center mt-1 w-3/5 shadow-xl dark:bg-[#0D0D0D]">
 	<Link href={`/channel?profile=${handle}`} aria-label="visit channel" >
         <div className='flex items-center p-2 '>
           <Avatar src={avatar} className='origin-left scale-75' />
