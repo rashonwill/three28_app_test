@@ -118,7 +118,7 @@ export default function PostModal({
       <Dialog.Trigger asChild>{children}</Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className='fixed inset-0 backdrop-blur' />
-        <Dialog.Content className='fixed z-50 max-w-5xl m-auto overflow-hidden shadow-xl inset-10 h-max bg-background rounded-xl'>
+        <Dialog.Content className='fixed z-50 max-w-2xl m-auto overflow-hidden shadow-xl inset-10 h-max bg-background rounded-xl'>
           <ScrollArea.Root>
             <ScrollArea.Viewport className='h-full py-10 '>
               <InputEdit placeholder="What's happening?" onChange={updateMessage} value={newpost}/>
