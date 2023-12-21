@@ -123,7 +123,7 @@ export default function PostModal({
             <ScrollArea.Viewport className='h-full py-10 '>
               <InputEdit placeholder="What's happening?" onChange={updateMessage} value={newpost}/>
 
-              <div className='relative w-96 h-72 m-4 mt-20 bg-neutral-200/[.3] dark:bg-[#171717]'>
+              <div className='relative w-96 h-72 m-auto mt-20 bg-neutral-200/[.3] dark:bg-[#171717]'>
               <Image
                   onClick={() => premiereRef.current?.click()}
                   className='absolute cursor-pointer right-5 bottom-1'
