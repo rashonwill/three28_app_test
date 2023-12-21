@@ -18,6 +18,7 @@ export default function PostModal({
   const [progress, setProgress] = useState({started: false, rate: 0});
   const [message, setMessage] = useState('');
   const [image, setImage] = useState('');
+  const premiereRef = useRef<HTMLInputElement>(null);
   // const FARI_API = 'https://www.fariapi.com/api';
   const FARI_API = 'https://fari-prod.herokuapp.com/api';
 
@@ -84,8 +85,6 @@ export default function PostModal({
   }
 }
 
-    const thumbRef = useRef<HTMLInputElement>(null);
-
 
     function putPoster(e: any, start: any) {
     e.preventDefault();
@@ -104,7 +103,7 @@ export default function PostModal({
     setImage(e.target.files[0])
     reader.onloadend = function (event: any) {
       
-    $("#post-image").attr("poster", url);
+    $("#post-image").attr("src", url);
   };
   reader.readAsDataURL(blob);
    
@@ -122,7 +121,16 @@ export default function PostModal({
           <ScrollArea.Root>
             <ScrollArea.Viewport className='h-full py-10 '>
               <InputEdit placeholder="What's happening?" onChange={updateMessage} value={newpost}/>
-              <div className="">
+
+              	    <div className='relative w-80 m-4 bg-neutral-200/[.3] dark:bg-[#171717]'>
+              <Image
+                  onClick={() => premiereRef.current?.click()}
+                  className='absolute cursor-pointer right-5 bottom-1'
+                  src={`/assets/images/camera.svg`}
+                  alt=''
+                  width={76}
+                  height={76}
+                />
               <input
               type='file'
               accept=".jpeg, .png, .jpg, .gif"
@@ -130,11 +138,17 @@ export default function PostModal({
                 // setThumb(URL.createObjectURL(e.target.files?.[0]!))
                 putPoster(e, 0)
               }
-              ref={thumbRef}
+              ref={premiereRef}
               className='hidden'
               name="post-image"
             />
-              </div>
+                <img
+                  className='object-cover w-full h-96'
+                  src={image}
+                  alt='post image'
+		              id="post-image"	
+                />
+	     </div>
 
               <div className="flex flex-col items-center justify-center gap-2 w-full h-[4rem] mt-[3rem]">
 {/*                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{progress.rate}% complete </span>} */}
