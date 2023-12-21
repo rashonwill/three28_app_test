@@ -134,7 +134,7 @@ export default function PostModal({
                 />
               <input
               type='file'
-              accept=".jpeg, .png, .jpg, .gif"
+              accept=".jpeg, .png, .jpg, .gif, .mp4, .wmv, .mov"
               onChange={(e) =>
                 // setThumb(URL.createObjectURL(e.target.files?.[0]!))
                 putPoster(e, 0)
