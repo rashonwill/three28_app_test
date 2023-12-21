@@ -6,7 +6,8 @@ import * as ScrollArea from '@radix-ui/react-scroll-area';
 import _ from 'underscore';
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-
+import Image from 'next/image';
+import $ from 'jquery';
 
 export default function PostModal({
   children,
