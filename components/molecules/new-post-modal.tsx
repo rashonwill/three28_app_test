@@ -144,7 +144,7 @@ export default function PostModal({
               name="post-image"
             />
                 <img
-                  className='object-cover w-full h-96'
+                  className='object-cover w-full h-full'
                   src={image}
                   alt='post image'
 		  id="post-image"	
@@ -156,7 +156,7 @@ export default function PostModal({
 {/*                {progress.started && <progress className="w-[32rem]" max="100" value={progress.rate}></progress>} */}
                {message && <span className="text-[1.5rem] text-[#050529] dark:text-[#fdfbf9]">{message}</span>}
              </div>
-              <div className='flex flex-wrap justify-end gap-10 px-4 mt-24'>
+              <div className='flex flex-wrap justify-end gap-10 px-4 mt-4'>
                   <Button accent className="" onClick={newPost}>
                     Post
                   </Button>
