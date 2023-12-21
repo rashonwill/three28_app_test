@@ -8,6 +8,8 @@ import { PenLine, Camera } from 'lucide-react';
 import { InputEdit } from '@/components/atoms/input-edit';
 import * as Separator from '@radix-ui/react-separator';
 import { PostCard } from '@/components/molecules/community-post';
+import NewPostModal from '@/components/molecules/new-post-modal';
+
 
 export default function Feed(){
  const [newpost, setPost] = useState('');
@@ -79,19 +81,20 @@ return (
       <>
             <div className='flex justify-end mt-20 gap-1.5 -translate-y-1/2 max-lg:hidden '>
 {/* 		                <Button accent className='px-4 flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
-{/*                 <div className=" w-9/12 h-full rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
+                <div className=" w-9/12 h-full rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
 			
                   <div className="h-full w-9/12">
                   <InputEdit placeholder='New Post' btn='Post' onClick={newComment} onChange={updatePost} value={newpost} />
                   </div>
 		    
 		    <Separator.Root className='w-9/12 h-px my-6 bg-black/40 dark:bg-white/40' />
-		    
+		<NewPostModal>    
             <div className="flex justify-end gap-1.5 cursor-pointer w-9/12">
-            <Typography variant="h5">Photo</Typography><Camera />
+            <Typography variant="h5">Photo/Video</Typography><Camera />
             </div>
+		</NewPostModal>
 		    
-            </div> */}
+            </div>
             </div>
         <div className="flex flex-col justify-center items-center gap-8 pb-40">
 	<PostCard src="https://d2v76lnwus9o6a.cloudfront.net/1703081774018_Color logo with background.png" title="Welcome to Three28!" user="Three28" avatar="https://d2v76lnwus9o6a.cloudfront.net/1700535607500_Color logo - no background.png" handle="three28" />
