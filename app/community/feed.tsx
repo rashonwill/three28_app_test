@@ -83,8 +83,9 @@ return (
 {/* 		                <Button accent className='px-4 flex items-center gap-2 h-'>New Post <PenLine /></Button> */}
                 <div className=" w-9/12 h-[5rem] rounded-3xl flex flex-col justify-center items-center p-4 dark:bg-[#0D0D0D]">
 			
-                  <div className="h-full w-9/12">
-                  <input type="text" className="h-[1rem] rounded-full m-2 w-full outline-none p-4 max-h-[50px] dark:bg-[#0D0D0D]" placeholder="What's happening" value={newpost} onChange={updatePost} />
+                  <div className="h-full w-9/12 flex">
+                  <input type="text" className="h-[1rem] rounded-full m-2 w-full outline-none p-4 max-h-[50px] dark:bg-[#0D0D0D]" placeholder="What's happening?" value={newpost} onChange={updatePost} />
+		   <button className="" onClick={newPost}>Post</button>
                   </div>
 		    
 {/* 		    <Separator.Root className='w-9/12 h-px mt-2 bg-black/40 dark:bg-white/40' /> */}
