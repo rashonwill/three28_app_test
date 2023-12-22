@@ -158,7 +158,7 @@ return (
         </div>
 	      
 	      <Separator.Root className='w-full h-px my-6 bg-black/40 dark:bg-white/40' />
-	      <div className="relative flex transition-all sm:text-[#545454] ">
+	      <div className="relative flex transition-all sm:px-5 text-[#545454] ">
 		      
 		<div className="flex gap-1.5 justify-start">
 			
@@ -169,7 +169,7 @@ return (
 	      <Typography variant="h6">0 Comments</Typography>
 	      </div>
 			
-		</div>      
+		</div>       
 
 	      
 
