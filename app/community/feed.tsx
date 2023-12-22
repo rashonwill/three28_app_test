@@ -85,7 +85,7 @@ return (
 			
                   <div className="h-full w-9/12 flex relative">
                   <input type="text" className="h-[1rem] rounded-full m-2 w-full outline-none p-4 max-h-[50px] dark:bg-[#171717]" placeholder="What's happening?" value={newpost} onChange={updatePost} />
-		   <button className="h-[1rem] w-[5rem] rounded-r-full rounded-l-none absolute right-0 m-2 dark:bg-[#0D0D0D]">Post</button>
+		   <button className="h-[2rem] w-[5rem] rounded-r-full rounded-l-none absolute right-0 m-2 dark:bg-[#0D0D0D]">Post</button>
                   </div>
 		    
 {/* 		    <Separator.Root className='w-9/12 h-px mt-2 bg-black/40 dark:bg-white/40' /> */}
