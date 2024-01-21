@@ -81,14 +81,14 @@ const [registered, setRegistered] = useState(false);
             <Tabs.Content value='Shop'>
          <Store  />
       </Tabs.Content>
-      <Tabs.Content value='Connect'>
+{/*       <Tabs.Content value='Connect'>
          <Scheduler  />
-      </Tabs.Content>
+      </Tabs.Content> */}
     </Tabs.Root>
          </>
   );
 }
 
-const data = ['Uploads', 'Pay to View', 'About', 'Shop', 'Connect'];
+const data = ['Uploads', 'Pay to View', 'About', 'Shop'];
 
 const data2 = ['Uploads', 'Pay to View', 'About'];
