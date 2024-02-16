@@ -54,6 +54,7 @@ export default function Login() {
       }
       
     } catch (error) {
+     appsignal.sendError(error)
      console.log(error)
       setTimeout(() => {
         setMessage('')
