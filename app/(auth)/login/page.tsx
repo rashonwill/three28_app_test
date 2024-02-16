@@ -7,7 +7,8 @@ import Typography from '@/components/atoms/typography';
 import { EyeOff, User2 } from 'lucide-react';
 import Link from 'next/link';
 import _ from "underscore";
-import Head from 'next/head'
+import Head from 'next/head';
+import { appsignal } from "/appsignal.js";
 
 
 export default function Login() {
