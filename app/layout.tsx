@@ -1,6 +1,6 @@
 import ThemeProvider from '@/context/theme-provider';
 import Script from 'next/script';
-import { ErrorBoundary } from "@appsignal/react";
+// import { ErrorBoundary } from "@appsignal/react";
 import './globals.css';
 import { Teko } from 'next/font/google';
 import { Poppins } from 'next/font/google';
@@ -95,15 +95,15 @@ src="https://www.facebook.com/tr?id=737404921084988&ev=PageView
         <h2 className="text-[transparent] z-0 absolute">Monetize content</h2>
         <h3 className="text-[transparent] z-0 absolute">Video sharing platform</h3>
         <h3 className="text-[transparent] z-0 absolute">eCommerce shop for content creators</h3>
-          <ErrorBoundary
+{/*           <ErrorBoundary
     instance={appsignal}
     fallback={(error) => <FallbackComponent />} {/* Optional */}
-  >
+  > */}
         <ThemeProvider>
           {children}
           <Sidebar />
         </ThemeProvider>
-        </ErrorBoundary>
+{/*         </ErrorBoundary> */}
       </body>
   </html>
 </>
