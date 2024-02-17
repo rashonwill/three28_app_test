@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback } from "react";
 export default function HeaderPhoto() {
   const [poster, setPoster] = useState('https://fari-prod-hls-069544520198.s3.amazonaws.com/wp4053330-no-wallpapers.jpg?format=webp');
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
   
 const getChannelProfile = useCallback(async () => {
