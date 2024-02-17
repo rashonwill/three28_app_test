@@ -16,7 +16,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   // const FARI_API = 'https://www.fariapi.com/api';	
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
     const updateUsername = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value)
