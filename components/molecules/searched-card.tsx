@@ -45,10 +45,10 @@ async function checkoutSessionStripe() {
   const stripe_acct = localStorage.getItem("productStripeAccount");
   const vendoremail = localStorage.getItem("vendorEmail");
   const customeremail = localStorage.getItem("userEmail");
-
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
    const myToken = localStorage.getItem("fariToken");
     
-  fetch(`https://fari-prod.herokuapp.com/api/orders/stripe-checkout/rental`, {
+  fetch(`${FARI_API}/orders/stripe-checkout/rental`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -111,7 +111,7 @@ async function checkoutSessionStripe() {
 async function getFeature() {
     try {
       const id = localStorage.getItem("videoID");
-      const response = await fetch(`https://fari-prod.herokuapp.com/api/explorer/play/${id}`, {
+      const response = await fetch(`${FARI_API}/explorer/play/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -133,7 +133,7 @@ async function getMyWatchList() {
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/watchlist/${userid}`,
+        `${FARI_API}/explorer/watchlist/${userid}`,
         {
           method: 'GET',
           headers: {
@@ -178,7 +178,7 @@ async function laterVideo() {
 
 
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/explorer/add/watchlist`, {
+    const response = await fetch(`${FARI_API}/explorer/add/watchlist`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
