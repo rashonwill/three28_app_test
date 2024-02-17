@@ -9,7 +9,7 @@ export default function Favorites() {
   const { push } = useRouter();
   const [favorites, setFavorites] = useState<any[]>([]);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
   const videoPlay = (e: any, uuid: any, channelid: any) => {
     e.preventDefault();
