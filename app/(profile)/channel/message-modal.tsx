@@ -17,7 +17,7 @@ export default function MessageModal({
   const [progress, setProgress] = useState({started: false, rate: 0});
   const [message, setMessage] = useState('');
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
     const updateMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewMessage(event.target.value)
