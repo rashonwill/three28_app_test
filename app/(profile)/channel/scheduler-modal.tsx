@@ -16,7 +16,7 @@ import { format, parseISO } from 'date-fns'
 export default function ScheduleModal({ children,}: { children: React.ReactNode }) {
   const appointmentUpload = useRef(null);
    // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   const myToken = localStorage.getItem("fariToken");
   const [name, setName] = useState('');
   const [dateTime, setDateTime] = useState('');
