@@ -13,6 +13,7 @@ export const revalidate = 240
 
 export default function Spotlight() {
 const [promoted, setPromoted] = useState<any[]>([]);
+const FARI_API = 'https://three28-test-api.onrender.com/api';  
 
 const videoPlay = (uuid: any, channelid : any) =>{
   localStorage.setItem('videoID', uuid)
@@ -22,7 +23,7 @@ const videoPlay = (uuid: any, channelid : any) =>{
 
    const getPromoted = cache(async () => {
       try{
-  	const response = await axios.get(`https://fari-prod.herokuapp.com/api/explorer/spotlight`)
+  	const response = await axios.get(`${FARI_API}/explorer/spotlight`)
     .then(({ data }) => {
         if (data) {
           setPromoted(data.uploads);
