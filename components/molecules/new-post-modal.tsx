@@ -21,7 +21,7 @@ export default function PostModal({
   const [image, setImage] = useState('');
   const premiereRef = useRef<HTMLInputElement>(null);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
     const updateMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewPost(event.target.value)
