@@ -48,12 +48,13 @@ export default function Video({
   const [videoArr, setVideoArr] = useState({});
   const [listed, setListed] = useState(false);
   const myToken = localStorage.getItem('fariToken');
+  const FARI_API = 'https://three28-test-api.onrender.com/api';	
 
     async function getFeature() {
     try {
       const id = localStorage.getItem('videoID');
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/play/${id}`,
+        `${FARI_API}/explorer/play/${id}`,
         {
           method: 'GET',
           headers: {
@@ -75,7 +76,7 @@ export default function Video({
     let thumbnailKey = localStorage.getItem('thumbnailkey');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/uploads/delete-upload/${id}/${videokey}/${thumbnailKey}`,
+        `${FARI_API}/uploads/delete-upload/${id}/${videokey}/${thumbnailKey}`,
         {
           method: 'DELETE',
           headers: {
@@ -95,7 +96,7 @@ const channelPost = useCallback(async () => {
   try {
     var channelid = localStorage.getItem("channelID");
     const response = await fetch(
-      `https://fari-prod.herokuapp.com/api/users/myprofile/post/${channelid}`,
+      `${FARI_API}/users/myprofile/post/${channelid}`,
       {
         method: "GET",
         headers: {
@@ -142,7 +143,7 @@ const channelPost = useCallback(async () => {
 
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/add/watchlist`,
+        `${FARI_API}/explorer/add/watchlist`,
         {
           method: 'POST',
           headers: {
@@ -178,7 +179,7 @@ const channelPost = useCallback(async () => {
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/watchlist/${userid}`,
+        `${FARI_API}/explorer/watchlist/${userid}`,
         {
           method: 'GET',
           headers: {
@@ -205,7 +206,7 @@ const channelPost = useCallback(async () => {
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/delete/watchlater/${userid}/${uuid}`,
+        `${FARI_API}/explorer/delete/watchlater/${userid}/${uuid}`,
         {
           method: 'DELETE',
           headers: {
@@ -231,7 +232,7 @@ const channelPost = useCallback(async () => {
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/delete/favs/${userid}/${uuid}`,
+        `${FARI_API}/explorer/delete/favs/${userid}/${uuid}`,
         {
           method: 'DELETE',
           headers: {
@@ -267,7 +268,7 @@ async function getMyFavs(){
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/explorer/myfavs/${userid}`,
+        `${FARI_API}/explorer/myfavs/${userid}`,
         {
           method: 'GET',
           headers: {
@@ -305,7 +306,7 @@ async function getMyFavs(){
       const vendoremail = localStorage.getItem('vendorEmail');
       const customeremail = localStorage.getItem('userEmail');
       fetch(
-        `https://fari-prod.herokuapp.com/api/orders/stripe-checkout/rental`,
+        `${FARI_API}/orders/stripe-checkout/rental`,
         {
           method: 'POST',
           headers: {
