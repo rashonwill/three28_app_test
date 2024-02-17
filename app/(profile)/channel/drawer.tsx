@@ -9,7 +9,7 @@ export default function Drawer({ children, isOpen, setIsOpen, count, setCount })
 const [cartItems, setCartItems] = useState([]);
 const [subtotal, setSubTotal] = useState('');	
 const myToken = localStorage.getItem('fariToken');
-const FARI_API = 'https://fari-prod.herokuapp.com/api';
+const FARI_API = 'https://three28-test-api.onrender.com/api';
 const productInfo = (
     e: any,
     productid: any,
