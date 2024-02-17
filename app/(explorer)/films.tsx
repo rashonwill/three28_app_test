@@ -13,7 +13,7 @@ export const revalidate = 300;
 export default function Films() {
   const [films, setFilms] = useState<any[]>([]);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
   const videoPlay = (uuid: any, channelID: any) =>{
   localStorage.setItem('videoID', uuid)
