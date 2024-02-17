@@ -17,7 +17,7 @@ export default function Store(){
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState<any[]>([]);
   const [productID, setProductID] = useState<number | undefined>();
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
     const productInfo = (
     e: any,
     productid: any,
