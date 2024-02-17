@@ -70,7 +70,7 @@ async function flagVideo(reason: string) {
   let id = localStorage.getItem("videoID");
   const myToken = localStorage.getItem("fariToken");
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 	
   let reasonFlagged = {
     flag_reason: reason,
