@@ -11,7 +11,7 @@ export default function Watchlist() {
   const { push } = useRouter();
   const [watchlist, setWatchlist] = useState<any[]>([]);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
 
   const videoPlay = (e: any, uuid: any, channelid: any) => {
