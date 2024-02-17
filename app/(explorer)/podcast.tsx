@@ -8,7 +8,7 @@ import { viewsConversion } from '@/app/conversions/conversion';
 export default function Podcast() {
   const [podcast, setPodcast] = useState<any[]>([]);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
 
   const videoPlay = (uuid: any, channelid: any) =>{
