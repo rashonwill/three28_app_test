@@ -13,6 +13,7 @@ export const revalidate = 240
 
 export default function SuggestedVideo() {
 const [suggested, setSuggested] = useState<any[]>([]);
+const FARI_API = 'https://three28-test-api.onrender.com/api';
 
 const videoPlay = (uuid: any, channelid: any) =>{
   localStorage.setItem('videoID', uuid)
@@ -22,7 +23,7 @@ const videoPlay = (uuid: any, channelid: any) =>{
 
    const getSuggested = cache(async () => {
     try{
-  	const response = await axios.get(`https://fari-prod.herokuapp.com/api/explorer/suggested`)
+  	const response = await axios.get(`${FARI_API}/explorer/suggested`)
     .then(({ data }) => {
         if (data) {
           setSuggested(data.uploads);
