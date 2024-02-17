@@ -34,6 +34,7 @@ export function MessageCard({
   const messageRef = useRef<HTMLParagraphElement>(null);
   const [remark, setRemark] = useState('')	
   const myToken = localStorage.getItem("fariToken");
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
 const newRemark = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRemark(event.target.value)
@@ -49,7 +50,7 @@ const newRemark = (event: React.ChangeEvent<HTMLInputElement>) => {
           };
 
           const response = await fetch(
-            `https://fari-prod.herokuapp.com/api/explorer/comment/edit/${id}`,
+            `${FARI_API}/explorer/comment/edit/${id}`,
             {
               method: "PATCH",
               headers: {
@@ -69,7 +70,7 @@ const newRemark = (event: React.ChangeEvent<HTMLInputElement>) => {
 const getComments = useCallback(async () => {
   const id = localStorage.getItem("videoID");
     try{
-  	const response = await axios.get(`https://fari-prod.herokuapp.com/api/explorer/comments/${id}`)
+  	const response = await axios.get(`${FARI_API}/explorer/comments/${id}`)
     .then(({ data }) => {
 	localStorage.setItem('comments', JSON.stringify(data.comments));
 	
@@ -84,7 +85,7 @@ const getComments = useCallback(async () => {
         let id = localStorage.getItem('commentID');
       try {
         const response = await fetch(
-          `https://fari-prod.herokuapp.com/api/explorer/comment/delete/${id}`,
+          `${FARI_API}/explorer/comment/delete/${id}`,
           {
             method: "DELETE",
             headers: {
@@ -112,7 +113,7 @@ function updateComments(){
 async function markAsRead() {
   let id = localStorage.getItem("noteID");
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/inbox/markasread/${id}`, {
+    const response = await fetch(`$FARI_API}/inbox/markasread/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -131,7 +132,7 @@ const getMessages = useCallback(async () => {
   let id = localStorage.getItem("userID");
   const myToken = localStorage.getItem("fariToken");
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/inbox/unread/${id}`, {
+    const response = await fetch(`${FARI_API}/inbox/unread/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
