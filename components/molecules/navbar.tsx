@@ -21,6 +21,7 @@ export default function Navbar() {
   const [avatar, setAvatar] = useState('https://drotje36jteo8.cloudfront.net/noAvi.png?format=webp');
   const [searchterm, setSearchTerm] = useState('');
   const [isUser, setIsUser] = useState(false);
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
   const updateCriteria = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -38,7 +39,7 @@ export default function Navbar() {
     const myToken = localStorage.getItem('fariToken');
     try {
       const response = await fetch(
-        `https://fari-prod.herokuapp.com/api/users/myprofile`,
+        `${FARI_API}/users/myprofile`,
         {
           method: 'GET',
           headers: {
