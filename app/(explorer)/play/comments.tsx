@@ -14,7 +14,7 @@ const [comment, setComments] = useState<any[]>([]);
 const [count, setCount] = useState<number | undefined>(0);
 const [user, setUser] = useState('');
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
 const updateComment = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewComment(event.target.value)
