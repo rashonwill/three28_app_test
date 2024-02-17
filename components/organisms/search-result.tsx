@@ -9,7 +9,7 @@ export default function SearchResult() {
 const [searched, setSearched] = useState<any[]>([]);
 const [message, setMessage] = useState('Searching...'); 
 const searchPage = useRef(null);
-
+const FARI_API = 'https://three28-test-api.onrender.com/api';
   
 const videoPlay = (uuid: any, channelid: any) =>{
   localStorage.setItem('videoID', uuid)
@@ -28,7 +28,7 @@ const purchasePlay = (uuid: any, channelid: any) =>{
     setSearched([])
   let query = localStorage.getItem('searchTerm');
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/explorer/video-search-explorer/${query}`, {
+    const response = await fetch(`${FARI_API}/explorer/video-search-explorer/${query}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
