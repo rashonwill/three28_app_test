@@ -39,13 +39,14 @@ export default function SearchedCard({
 }) {
 const [videoArr, setVideoArr] = useState({});
 const [listed, setListed] = useState(false);
-
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
+	
 async function checkoutSessionStripe() {
   const purchaseItems = JSON.parse(localStorage.getItem("videoPurchase")!);
   const stripe_acct = localStorage.getItem("productStripeAccount");
   const vendoremail = localStorage.getItem("vendorEmail");
   const customeremail = localStorage.getItem("userEmail");
-  const FARI_API = 'https://three28-test-api.onrender.com/api';
+
    const myToken = localStorage.getItem("fariToken");
     
   fetch(`${FARI_API}/orders/stripe-checkout/rental`, {
