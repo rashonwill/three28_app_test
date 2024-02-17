@@ -26,6 +26,7 @@ export default function MerchEditModal({ children, products, setProducts }: { ch
   const [progress, setProgress] = useState({started: false, rate: 0});
   const [message, setMessage] = useState('');	
 
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
   const addColor = (event: any) => {
           if(event.keyCode == 13){
@@ -78,7 +79,7 @@ const getMyProducts = useCallback(async () => {
   let vendor_name = localStorage.getItem('channelName');
   const myToken = localStorage.getItem("fariToken");
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/store/myshop/${vendor_name}`,{
+    const response = await fetch(`${FARI_API}/store/myshop/${vendor_name}`,{
       method: 'GET',  
       headers: {
         'Content-Type': 'application/json',
@@ -114,7 +115,7 @@ const updateProduct = async () => {
     setProgress((prevState: any) => {
       return {...prevState, started: true}
     })
-    const response = await axios.put(`https://fari-prod.herokuapp.com/api/store/update/product/${productid}`, productData, {
+    const response = await axios.put(`${FARI_API}/store/update/product/${productid}`, productData, {
       onUploadProgress: (progressEvent: any) => {setProgress((prevState: any) => {
         let percent = Math.round(progressEvent.progress*100)
              if(percent === 100) {
@@ -151,7 +152,7 @@ const getProduct = useCallback(async () => {
   const myToken = localStorage.getItem("fariToken");
   const id = localStorage.getItem('productID');	
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/store/product-details/${id}`,{
+    const response = await fetch(`${FARI_API}/store/product-details/${id}`,{
       method: 'GET',  
       headers: {
         'Content-Type': 'application/json',
