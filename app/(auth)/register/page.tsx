@@ -22,7 +22,7 @@ export default function Page() {
   const [message, setMessage] = useState("");
   const [code, setCode] = useState('');
    // const FARI_API = 'https://www.fariapi.com/api';	
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
     const updateUsername = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value)
