@@ -12,12 +12,12 @@ import Head from 'next/head';
 
 export default function Page() {
 const [registered, setRegistered] = useState(false);
-
+const FARI_API = 'https://three28-test-api.onrender.com/api'
 
   const getChannelProfile = useCallback(async () => {
   try {
     let channelid = localStorage.getItem("visitingChannelID");
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/users/channel/${channelid}`, {
+    const response = await fetch(`${FARI_API}/users/channel/${channelid}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
