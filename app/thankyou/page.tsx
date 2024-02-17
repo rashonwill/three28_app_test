@@ -9,7 +9,7 @@ import { useEffect } from "react";
 export default function OrderComplete() {
 
 // const FARI_API = 'https://www.fariapi.com/api';
-const FARI_API = 'https://fari-prod.herokuapp.com/api';	
+const FARI_API = 'https://three28-test-api.onrender.com/api';	
 
 async function reduceQuantity(){
 const myToken = localStorage.getItem('fariToken');	
