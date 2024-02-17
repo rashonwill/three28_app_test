@@ -10,7 +10,7 @@ export default function Subscriptions() {
 const [subscriptions, setSubscriptions] = useState<any[]>([]);
 const [isPaid, setIsPaid] = useState(false);
   // const FARI_API = 'https://www.fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   
 const purchasePlay = (uuid: any, channelid: any) =>{
   localStorage.setItem('videoID', uuid)
