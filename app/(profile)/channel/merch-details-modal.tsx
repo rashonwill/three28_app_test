@@ -38,7 +38,7 @@ export default function MerchModal({
   const [img4, setImage4] = useState('');
   const [name, setName] = useState('');	
   const [description, setDescription] = useState('');	
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';	
+  const FARI_API = 'https://three28-test-api.onrender.com/api';	
 	
 	
   const setCartQty = () => {
