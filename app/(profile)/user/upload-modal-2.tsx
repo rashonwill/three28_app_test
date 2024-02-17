@@ -37,7 +37,7 @@ export default function UploadModal2({
     setCategory(event.target.value)
   }
 
-  const FARI_API = 'https://www.fariapi.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
   // const FARI_API = 'https://fari-prod.herokuapp.com/api';
 
   const vendorVerificationCheck = useCallback(async () => {
