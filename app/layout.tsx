@@ -44,9 +44,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const FallbackComponent = () => (
-  <div>Uh oh! There was an error :(</div>
-);
   return (
 <>
   <html lang='en'>
@@ -95,15 +92,10 @@ src="https://www.facebook.com/tr?id=737404921084988&ev=PageView
         <h2 className="text-[transparent] z-0 absolute">Monetize content</h2>
         <h3 className="text-[transparent] z-0 absolute">Video sharing platform</h3>
         <h3 className="text-[transparent] z-0 absolute">eCommerce shop for content creators</h3>
-{/*           <ErrorBoundary
-    instance={appsignal}
-    fallback={(error) => <FallbackComponent />} {/* Optional */}
-  > */}
         <ThemeProvider>
           {children}
           <Sidebar />
         </ThemeProvider>
-{/*         </ErrorBoundary> */}
       </body>
   </html>
 </>
