@@ -22,7 +22,7 @@ export default function MainPage() {
   const videoRef = useRef(null);
   const isInitialMount = useRef(true);
   // const FARI_API = 'https://fariapi.com/api';
-  const FARI_API = 'https://fari-prod.herokuapp.com/api';
+  const FARI_API = 'https://three28-test-api.onrender.com/api';
 
   const playVideo = useCallback(async () => {
     let paramaters = new URLSearchParams(window.location.search);
