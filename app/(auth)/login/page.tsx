@@ -8,7 +8,7 @@ import { EyeOff, User2 } from 'lucide-react';
 import Link from 'next/link';
 import _ from "underscore";
 import Head from 'next/head';
-import { appsignal } from "appsignal.js";
+import { appsignal } from "@/appsignal";
 
 
 export default function Login() {
