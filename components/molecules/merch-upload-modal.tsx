@@ -32,6 +32,7 @@ export default function MerchUploadModal({ children, products, setProducts, }: {
   const [sizes, setSizes] = useState<string[]>([]);
   const [progress, setProgress] = useState({started: false, rate: 0});
   const [message, setMessage] = useState('');	
+  const FARI_API = 'https://three28-test-api.onrender.com/api';	
 
 
   const addColor = (event: any) => {
@@ -164,7 +165,7 @@ export default function MerchUploadModal({ children, products, setProducts, }: {
   let vendor_name = localStorage.getItem('channelName');
   const myToken = localStorage.getItem("fariToken");
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/store/myshop/${vendor_name}`,{
+    const response = await fetch(`${FARI_API}/store/myshop/${vendor_name}`,{
       method: 'GET',  
       headers: {
         'Content-Type': 'application/json',
@@ -182,7 +183,7 @@ export default function MerchUploadModal({ children, products, setProducts, }: {
 async function getUserProfile(){
 const myToken = localStorage.getItem("fariToken"); 	
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/users/myprofile`,{
+    const response = await fetch(`${FARI_API}/users/myprofile`,{
       method: 'GET',  
       headers: {
         'Content-Type': 'application/json',
@@ -242,7 +243,7 @@ const upload = async () => {
     setProgress((prevState: any) => {
       return {...prevState, started: true}
     })
-    const response = await axios.post(`https://fari-prod.herokuapp.com/api/store/products/new`, formData, {
+    const response = await axios.post(`${FARI_API}/store/products/new`, formData, {
       onUploadProgress: (progressEvent: any) => {setProgress((prevState: any) => {
         let percent = Math.round(progressEvent.progress*100)
              if(percent === 100) {
