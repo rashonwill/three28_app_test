@@ -17,6 +17,7 @@ const [title, setTitle] = useState('')
 const [description, setDescription] = useState('')
 const [tags, setTags] = useState<string[]>(["fari"]);
 const [message, setMessage] = useState('');	
+const FARI_API = 'https://three28-test-api.onrender.com/api';	
 
     const updateTitle = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value)
@@ -50,7 +51,7 @@ const [message, setMessage] = useState('');
     videotags: JSON.stringify(tags),
   };
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/uploads/edit-upload/${id}`, {
+    const response = await fetch(`${FARI_API}/uploads/edit-upload/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +71,7 @@ const [message, setMessage] = useState('');
 const getVideo = useCallback(async () => {
    const id = localStorage.getItem("videoID");
     try{
-  	const response = await axios.get(`https://fari-prod.herokuapp.com/api/explorer/play/${id}`)
+  	const response = await axios.get(`${FARI_API}/explorer/play/${id}`)
     .then(({ data }) => {
         if (data) {
           setTitle(data.video[0].videotitle)
@@ -99,7 +100,7 @@ const channelPost = useCallback(async () => {
   try {
     var channelid = localStorage.getItem("channelID");
     const response = await fetch(
-      `https://fari-prod.herokuapp.com/api/users/myprofile/post/${channelid}`,
+      `${FARI_API}/users/myprofile/post/${channelid}`,
       {
         method: "GET",
         headers: {
