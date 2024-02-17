@@ -1,5 +1,5 @@
 import Appsignal from "@appsignal/javascript";
 
 export const appsignal = new Appsignal({
-  key: "8e071a31-baee-4a20-ae27-b720d2255292",
+  key: "31d1a77c-44f8-4cc4-9f1c-afaed407931c",
 });
