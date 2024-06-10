@@ -20,7 +20,7 @@ export default function Page() {
   let id = localStorage.getItem("vendorID");
   const myToken = localStorage.getItem("fariToken");
   try {
-    const response = await fetch(`https://fari-prod.herokuapp.com/api/users/vendor-verified/${id}`, {
+    const response = await fetch(`https://three28-test-api.onrender.com/api/users/vendor-verified/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
