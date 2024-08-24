@@ -8,9 +8,33 @@ import Podcast from '@/app/(explorer)/podcast';
 import Music from '@/app/(explorer)/music';
 import Tech from '@/app/(explorer)/tech';
 import Vlogs from '@/app/(explorer)/vlogs';
+import {
+  Box,
+  Tab,
+  Tabs,
+  TabContext,
+  TabPanel,
+} from '@mui/material';
+
 
 export default function MoreVideos() {
   return (
+
+    <Box sx={{ width: '100%' }} class="tab-menu">
+      <Tabs
+        textColor="secondary"
+        indicatorColor="primary"
+        aria-label="secondary tabs example"
+      >
+        <Tab value="one" label="Home" />
+        <Tab value="two" label="Films" />
+        <Tab value="three" label="Series" />
+        <Tab value="four" label="Podcast" />
+        <Tab value="five" label="Music" />
+        <Tab value="six" label="Tech" />
+        <Tab value="six" label="Vlogs" />
+      </Tabs>
+    </Box>
     <Tabs.Root defaultValue='Home' className='mb-20 max-lg:hidden'>
       <Tabs.List className='mt-10 space-x-7'>
         {data.map((_) => (
