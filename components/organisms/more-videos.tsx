@@ -18,7 +18,7 @@ import {
 export default function MoreVideos() {
   return (
     <>
-        <Box sx={{ width: '100%' }} class="tab-menu">
+{/*         <Box sx={{ width: '100%' }} class="tab-menu"> */}
       <Tabs
         textColor="secondary"
         indicatorColor="primary"
@@ -32,7 +32,7 @@ export default function MoreVideos() {
         <Tab value="six" label="Tech" />
         <Tab value="six" label="Vlogs" />
       </Tabs>
-    </Box>
+{/*     </Box> */}
     </>
 
 
