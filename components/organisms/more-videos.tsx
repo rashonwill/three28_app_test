@@ -1,4 +1,4 @@
-import * as Tabs from '@radix-ui/react-tabs';
+// import * as Tabs from '@radix-ui/react-tabs';
 import { VideoWithOptions } from './video-with-options';
 import Typography from '../atoms/typography';
 import Home from '@/app/(explorer)/home';
