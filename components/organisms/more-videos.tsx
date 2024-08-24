@@ -9,30 +9,42 @@ import Music from '@/app/(explorer)/music';
 import Tech from '@/app/(explorer)/tech';
 import Vlogs from '@/app/(explorer)/vlogs';
 import {
-  Box,
   Tab,
   Tabs,
+  Box,
 } from '@mui/material';
+
+import TabPanel from '@mui/lab/TabPanel';
 
 
 export default function MoreVideos() {
   return (
     <>
-{/*         <Box sx={{ width: '100%' }} class="tab-menu"> */}
+        <Box className='w=full'>
       <Tabs
         textColor="secondary"
         indicatorColor="primary"
         aria-label="secondary tabs example"
+        centered
+        typogrpahy="h5"
       >
-        <Tab value="one" label="Home" />
-        <Tab value="two" label="Films" />
-        <Tab value="three" label="Series" />
-        <Tab value="four" label="Podcast" />
-        <Tab value="five" label="Music" />
-        <Tab value="six" label="Tech" />
-        <Tab value="six" label="Vlogs" />
+        <Tab value="1" label="Home" />
+        <Tab value="2" label="Films" />
+        <Tab value="3" label="Series" />
+        <Tab value="4" label="Podcast" />
+        <Tab value="5" label="Music" />
+        <Tab value="6" label="Tech" />
+        <Tab value="7" label="Vlogs" />
       </Tabs>
-{/*     </Box> */}
+    </Box>
+
+  <TabPanel value="1"><Home /></TabPanel>
+  <TabPanel value="2"><Films /></TabPanel>
+  <TabPanel value="3"><Series /></TabPanel>
+  <TabPanel value="4"><Podcast /></TabPanel>
+  <TabPanel value="5"><Music /></TabPanel>   
+  <TabPanel value="6"><Tech /></TabPanel> 
+  <TabPanel value="7"><Vlogs /></TabPanel>    
     </>
 
 
