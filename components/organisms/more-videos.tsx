@@ -25,7 +25,6 @@ export default function MoreVideos() {
         indicatorColor="primary"
         aria-label="secondary tabs example"
         centered
-        variant="h5"
       >
         <Tab value="1" label="Home" />
         <Tab value="2" label="Films" />
