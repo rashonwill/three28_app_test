@@ -12,9 +12,8 @@ import {
   Tab,
   Tabs,
   Box,
+  styled,
 } from '@mui/material';
-
-// import TabPanel from '@mui/lab/TabPanel';
 
 
 export default function MoreVideos() {
@@ -26,7 +25,7 @@ export default function MoreVideos() {
         indicatorColor="primary"
         aria-label="secondary tabs example"
         centered
-        typogrpahy="h5"
+        variant="h5"
       >
         <Tab value="1" label="Home" />
         <Tab value="2" label="Films" />
