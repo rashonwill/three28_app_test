@@ -13,13 +13,16 @@ import {
   Tabs,
   Box,
   styled,
+  Grid,
 } from '@mui/material';
 
 
 export default function MoreVideos() {
   return (
     <>
-        <Box className='w=full'>
+      <Grid>
+          <Grid>
+        <Box className='w=full justify-center align-center'>
       <Tabs
         textColor="secondary"
         indicatorColor="primary"
@@ -35,6 +38,9 @@ export default function MoreVideos() {
         <Tab value="7" label="Vlogs" />
       </Tabs>
     </Box>
+
+                   </Grid>
+        </Grid>
 
 {/*   <TabPanel value="1"><Home /></TabPanel>
   <TabPanel value="2"><Films /></TabPanel>
