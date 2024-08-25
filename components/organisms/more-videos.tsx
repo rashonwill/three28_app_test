@@ -14,7 +14,7 @@ import {
   Box,
 } from '@mui/material';
 
-import TabPanel from '@mui/lab/TabPanel';
+// import TabPanel from '@mui/lab/TabPanel';
 
 
 export default function MoreVideos() {
@@ -38,13 +38,13 @@ export default function MoreVideos() {
       </Tabs>
     </Box>
 
-  <TabPanel value="1"><Home /></TabPanel>
+{/*   <TabPanel value="1"><Home /></TabPanel>
   <TabPanel value="2"><Films /></TabPanel>
   <TabPanel value="3"><Series /></TabPanel>
   <TabPanel value="4"><Podcast /></TabPanel>
   <TabPanel value="5"><Music /></TabPanel>   
   <TabPanel value="6"><Tech /></TabPanel> 
-  <TabPanel value="7"><Vlogs /></TabPanel>    
+  <TabPanel value="7"><Vlogs /></TabPanel>     */}
     </>
 
 
